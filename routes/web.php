@@ -22,5 +22,5 @@ Route::get('/login', function () {
 });
 
 Route::get('/perfil', function () {
-    return view('/jugadores/perfil');
+    return view('/jugadores/perfil.blade.php');
 });
