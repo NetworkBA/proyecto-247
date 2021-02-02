@@ -43,19 +43,7 @@
               <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
 
       </nav>
-         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
-            </div>
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © proyecto-256 2021</span></div>
-                </div>
-            </footer>
-        </div>
-        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
-    </div>
-
-
+      
 
         <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
 
