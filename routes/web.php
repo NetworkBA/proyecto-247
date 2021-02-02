@@ -24,3 +24,7 @@ Route::get('/login', function () {
 Route::get('/perfil', function () {
     return view('jugadores.perfil');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
