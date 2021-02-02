@@ -1,4 +1,4 @@
-@extends('layouts.app')
+
 
 @section('content')
 <body id="page-top">
@@ -19,6 +19,7 @@
               <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
 
       </nav>
+        @extends('layouts.app')
          <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
             </div>
