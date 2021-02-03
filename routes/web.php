@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('auth/login');
+    return view('login');
 });
 
 Route::get('/perfil', function () {
