@@ -25,28 +25,27 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
-    <div id="content">
+<body id="page-top">
+    <div id="wrapper">
 
       <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
           <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                   <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
                   <div class="sidebar-brand-text mx-3"><span>proyecto-256</span></div>
               </a>
-              <hr class="sidebar-divider my-0">
+              <hr class="sidebar-divider my-0" />
               <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                  <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="perfil"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                  <li class="nav-item"><a class="nav-link active" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="login"><i class="far fa-user-circle"></i><span>Inico de Sesión</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
               </ul>
               <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
-
+          </div>
       </nav>
-
-      <div id="app" class="container-fluid">
-
+      <div class="d-flex flex-column" id="content-wrapper">
+          <div id="content">
         <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
 
             <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
@@ -92,18 +91,15 @@
 
 
                 </ul>
-
             </div>
         </nav>
+      </div>
+    </div>
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
-  </div>
-
-
-
 </body>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
