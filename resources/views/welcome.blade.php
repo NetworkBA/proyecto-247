@@ -32,13 +32,13 @@
       </nav>
          <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-              
+
 
 
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © proyecto-256 2021</span></div>
+                    <div class="text-center my-auto copyright"><span>Copyright © Proyecto-256 2021</span></div>
                 </div>
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
