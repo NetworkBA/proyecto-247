@@ -94,11 +94,14 @@
             </div>
         </nav>
       </div>
+
+      <main class="py-4">
+          @yield('content')
+      </main>
+      
     </div>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+
     </div>
 </body>
 <script src="assets/js/jquery.min.js"></script>
