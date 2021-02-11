@@ -17,12 +17,11 @@
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                      <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="First Name" name="name" />
-                                    </div>
-                                    <div class="col-sm-6">
-                                      <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Last Name" name="last_name" />
-                                    </div>
+                                  <div class="form-group">
+                                    <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="First Name" name="name" />
+                                  </div>
+
+                                  
                                 </div>
                                 <div class="form-group">
                                   <input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email Address" name="email" />
