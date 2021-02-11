@@ -23,7 +23,7 @@
                                     <input class="form-control form-control-user" type="text" id="" placeholder="Apellido Materno" name="ApellidoM" />
                                   </div>
                                   <div class="form-group">
-                                    <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Nombre" name="Nombre" />
+                                    <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Nombre" name="name" />
                                   </div>
                                 <div class="form-group">
                                   <input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Correo Electronico" name="email" />
