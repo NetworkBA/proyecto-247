@@ -17,20 +17,23 @@
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                   <div class="form-group">
-                                    <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="First Name" name="name" />
+                                    <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Apellido Paterno" name="ApellidoP" />
                                   </div>
-
-
-
+                                  <div class="form-group">
+                                    <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Apellido Materno" name="ApellidoM" />
+                                  </div>
+                                  <div class="form-group">
+                                    <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Nombre" name="Nombre" />
+                                  </div>
                                 <div class="form-group">
-                                  <input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email Address" name="email" />
+                                  <input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Correo Electronico" name="email" />
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                      <input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Password" name="password" />
+                                      <input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Contraseña" name="password" />
                                     </div>
                                     <div class="col-sm-6">
-                                      <input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Repeat Password" name="password_confirmation" />
+                                      <input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Repetir Constraseña" name="password_confirmation" />
                                     </div>
                                 </div>
 
