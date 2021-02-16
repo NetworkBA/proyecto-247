@@ -101,7 +101,7 @@
                                         </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" /></div>
                                     </div>
                                 </div>
-                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Guardar Cambios</button></div>
+                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Editar Datos Generales</button></div>
                             </form>
                         </div>
                     </div>
