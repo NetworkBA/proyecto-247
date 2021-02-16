@@ -13,6 +13,22 @@ class TiposUsuarios extends Seeder
      */
     public function run()
     {
-        //
+      DB::table('TipodeUsuarios')->insert([
+        'TipodeUsuarios' => 'Administrador',
+    ]);
+
+    DB::table('TipodeUsuarios')->insert([
+      'TipodeUsuarios' => 'Entrenador',
+    ]);
+    DB::table('TipodeUsuarios')->insert([
+      'TipodeUsuarios' => 'Auxiliar',
+    ]);
+    DB::table('TipodeUsuarios')->insert([
+      'TipodeUsuarios' => 'Medico',
+    ]);
+    DB::table('TipodeUsuarios')->insert([
+      'TipodeUsuarios' => 'Jugador',
+    ]);
+
     }
 }
