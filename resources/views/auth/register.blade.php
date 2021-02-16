@@ -29,7 +29,7 @@
                                   <input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Correo Electronico" name="email" />
                                 </div>
                                 <div class="form-group">
-                                  <input class="form-control form-control-user" type="date" id="date" name="date" />
+                                  <input class="form-control form-control-user" type="date" id="date" name="date" required/>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
