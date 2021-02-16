@@ -78,7 +78,6 @@
                             <p class="text-primary m-0 font-weight-bold">Datos Generales</p>
                         </div>
                         <div class="card-body">
-                            <form>
                                 <div class="form-row">
                                     <div class="col">
                                         <div class="form-group">
@@ -106,9 +105,27 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                  <button class="btn btn-primary btn-sm" type="submit">Editar Datos Generales</button></div>
-                            </form>
+                                  <button class="btn btn-primary btn-sm" type="submit" data-toggle="modal" data-target="#create" >Editar Datos Generales</button></div>
                         </div>
+                        <div class="modal fade" id="create">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">
+                                          <span>×</span>
+                                      </button>
+                                      <h4>Crear</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                      ….
+                                  </div>
+                                  <div class="modal-footer">
+                                      <input type="submit" class="btn btn-primary" value="Guardar">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
                     </div>
                     <div class="card shadow">
                         <div class="card-header py-3">
