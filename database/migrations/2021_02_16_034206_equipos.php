@@ -14,7 +14,7 @@ class Equipos extends Migration
     public function up()
     {
       Schema::create('Equipos', function (Blueprint $table) {
-          $table->id();
+        $table->increments('id');
           $table->string('Nombre');
           $table->integer('id_Entrenador');
           $table->rememberToken();

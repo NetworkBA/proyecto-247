@@ -14,7 +14,7 @@ class HistorialMedico extends Migration
     public function up()
     {
       Schema::create('HistorialMedico', function (Blueprint $table) {
-          $table->id();
+        $table->increments('id');
           $table->rememberToken();
           $table->timestamps();
       });
