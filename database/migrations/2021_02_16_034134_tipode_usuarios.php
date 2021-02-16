@@ -13,7 +13,12 @@ class TipodeUsuarios extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('TipodeUsuarios', function (Blueprint $table) {
+          $table->id();
+          $table->string('TipodeUsuarios');
+          $table->rememberToken();
+          $table->timestamps();
+      });
     }
 
     /**
@@ -23,6 +28,7 @@ class TipodeUsuarios extends Migration
      */
     public function down()
     {
-        //
+      Schema::dropIfExists('TipodeUsuarios');
+
     }
 }

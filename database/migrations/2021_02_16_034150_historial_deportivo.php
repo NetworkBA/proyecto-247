@@ -13,7 +13,11 @@ class HistorialDeportivo extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('HistorialDeportivo', function (Blueprint $table) {
+          $table->id();
+          $table->rememberToken();
+          $table->timestamps();
+      });
     }
 
     /**
@@ -23,6 +27,7 @@ class HistorialDeportivo extends Migration
      */
     public function down()
     {
-        //
+      Schema::dropIfExists('HistorialDeportivo');
+
     }
 }

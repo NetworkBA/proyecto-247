@@ -13,7 +13,13 @@ class Equipos extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('Equipo', function (Blueprint $table) {
+          $table->id();
+          $table->string('Nombre');
+          $table->integer('id_Entrenador')
+          $table->rememberToken();
+          $table->timestamps();
+      });
     }
 
     /**
@@ -23,6 +29,7 @@ class Equipos extends Migration
      */
     public function down()
     {
-        //
+      Schema::dropIfExists('Equipo');
+
     }
 }
