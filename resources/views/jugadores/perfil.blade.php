@@ -114,7 +114,7 @@
                                       <button type="button" class="close" data-dismiss="modal">
                                           <span>×</span>
                                       </button>
-                                      <h4>Crear</h4>
+                                      <h4>Cerrar</h4>
                                   </div>
                                   <div class="modal-body">
                                       ….
