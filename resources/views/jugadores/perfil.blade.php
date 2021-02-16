@@ -147,7 +147,7 @@
                                             <div class="form-row">
                                                 <div class="col">
                                                     <div class="form-group"><label for="first_name"><strong>Fecha Nacimiento</strong>
-                                                    </label><input type="date" />
+                                                    </label><input class="form-control" type="date" />
                                                   </div>
                                                 </div>
 
