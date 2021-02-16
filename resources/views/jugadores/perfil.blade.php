@@ -89,19 +89,19 @@
                                     <div class="col">
                                         <div class="form-group">
                                           <label for="email"><strong>Correo Electronico</strong>
-                                        </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" readonly/>
+                                        </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" disabled/>
                                       </div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
                                         <div class="form-group"><label for="first_name"><strong>Apellido Paterno</strong>
-                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" readonly/>
+                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" disabled/>
                                       </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group"><label for="last_name"><strong>Apellido Materno</strong>
-                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" readonly/>
+                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" disabled/>
                                       </div>
                                     </div>
                                 </div>
