@@ -83,22 +83,26 @@
                                     <div class="col">
                                         <div class="form-group">
                                           <label for="username"><strong>Nombre</strong></label>
-                                          <input class="form-control" type="text" placeholder="{{Auth()->user()->name}}" name="username" readonly /></div>
+                                          <input class="form-control" type="text" placeholder="{{Auth()->user()->name}}" name="username" disabled />
+                                        </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group">
                                           <label for="email"><strong>Correo Electronico</strong>
-                                        </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" readonly/></div>
+                                        </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" readonly/>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
                                         <div class="form-group"><label for="first_name"><strong>Apellido Paterno</strong>
-                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" readonly/></div>
+                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" readonly/>
+                                      </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group"><label for="last_name"><strong>Apellido Materno</strong>
-                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" readonly/></div>
+                                        </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" readonly/>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Editar Datos Generales</button></div>
