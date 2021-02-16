@@ -86,7 +86,9 @@
                                           <input class="form-control" type="text" placeholder="{{Auth()->user()->name}}" name="username" /></div>
                                     </div>
                                     <div class="col">
-                                        <div class="form-group"><label for="email"><strong>Correo Electronico</strong></label><input class="form-control" type="email" placeholder="user@example.com" name="email" /></div>
+                                        <div class="form-group">
+                                          <label for="email"><strong>Correo Electronico</strong>
+                                        </label><input class="form-control" type="email" placeholder="{Auth()->user()->email}}" name="email" /></div>
                                     </div>
                                 </div>
                                 <div class="form-row">
