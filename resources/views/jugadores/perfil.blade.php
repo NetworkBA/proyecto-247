@@ -117,35 +117,36 @@
 
                                   </div>
                                   <div class="modal-body">
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                  <label for="username"><strong>Nombre</strong></label>
-                                                  <input class="form-control" type="text" placeholder="{{Auth()->user()->name}}" name="username" disabled />
+                                    <div class="card-body">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                      <label for="username"><strong>Nombre</strong></label>
+                                                      <input class="form-control" type="text" placeholder="{{Auth()->user()->name}}" name="username" disabled />
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                      <label for="email"><strong>Correo Electronico</strong>
+                                                    </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" disabled/>
+                                                  </div>
                                                 </div>
                                             </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                  <label for="email"><strong>Correo Electronico</strong>
-                                                </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" disabled/>
-                                              </div>
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="form-group"><label for="first_name"><strong>Apellido Paterno</strong>
+                                                    </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" disabled/>
+                                                  </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group"><label for="last_name"><strong>Apellido Materno</strong>
+                                                    </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" disabled/>
+                                                  </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group"><label for="first_name"><strong>Apellido Paterno</strong>
-                                                </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" disabled/>
-                                              </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group"><label for="last_name"><strong>Apellido Materno</strong>
-                                                </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" disabled/>
-                                              </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                          <button class="btn btn-primary btn-sm" type="submit" data-toggle="modal" data-target="#create" >Editar Datos Generales</button></div>
-                                </div>
+                                            <div class="form-group">
+                                              <button class="btn btn-primary btn-sm" type="submit" data-toggle="modal" data-target="#create" >Editar Datos Generales</button></div>
+                                    </div>
                                   </div>
                                   <div class="modal-footer">
                                       <input type="submit" class="btn btn-primary" value="Guardar">
