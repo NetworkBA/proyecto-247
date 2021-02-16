@@ -31,5 +31,5 @@ Vue.component('menu-component', require('./components/Menu.vue').default);
  */
 
 const app = new Vue({
-    el: 'app',
+    el: '#app',
 });
