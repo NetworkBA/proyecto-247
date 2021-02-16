@@ -118,7 +118,7 @@
                                   </div>
                                   <div class="modal-body">
                                     <div class="card-body">
-                                            <div class="form">
+                                            <div class="form-row">
                                                 <div class="col">
                                                     <div class="form-group">
                                                       <label for="username"><strong>Nombre</strong></label>
@@ -132,7 +132,7 @@
                                                   </div>
                                                 </div>
                                             </div>
-                                            <div class="form">
+                                            <div class="form-row">
                                                 <div class="col">
                                                     <div class="form-group"><label for="first_name"><strong>Apellido Paterno</strong>
                                                     </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" />
