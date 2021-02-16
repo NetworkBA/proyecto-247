@@ -106,7 +106,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                  <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-sm" type="submit">Editar Datos Generales</button>
+                                  <button class="btn btn-primary btn-sm" type="submit">Editar Datos Generales</button>
                                 </div>
                             </form>
                         </div>
@@ -137,18 +137,6 @@
         <div class="card-header py-3"></div>
         <div class="card-body"></div>
     </div>
-
-    <!-- The Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('id01').style.display='none'"
-      class="w3-button w3-display-topright">&times;</span>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-    </div>
-  </div>
-</div>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
