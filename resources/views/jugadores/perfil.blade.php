@@ -144,8 +144,7 @@
                                                   </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                              <button class="btn btn-primary btn-sm" type="submit" data-toggle="modal" data-target="#create" >Editar Datos Generales</button></div>
+                                            
                                     </div>
                                   </div>
                                   <div class="modal-footer">
