@@ -122,29 +122,29 @@
                                                 <div class="col">
                                                     <div class="form-group">
                                                       <label for="username"><strong>Nombre</strong></label>
-                                                      <input class="form-control" type="text" placeholder="{{Auth()->user()->name}}" name="username" disabled />
+                                                      <input class="form-control" type="text" placeholder="{{Auth()->user()->name}}" name="username"  />
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="form-group">
                                                       <label for="email"><strong>Correo Electronico</strong>
-                                                    </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" disabled/>
+                                                    </label><input class="form-control" type="email" placeholder="{{Auth()->user()->email}}" name="email" />
                                                   </div>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="col">
                                                     <div class="form-group"><label for="first_name"><strong>Apellido Paterno</strong>
-                                                    </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" disabled/>
+                                                    </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoP}}" name="-ApellidoP" />
                                                   </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="form-group"><label for="last_name"><strong>Apellido Materno</strong>
-                                                    </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" disabled/>
+                                                    </label><input class="form-control" type="text" placeholder="{{Auth()->user()->ApellidoM}}" name="ApellidoM" />
                                                   </div>
                                                 </div>
                                             </div>
-                                            
+
                                     </div>
                                   </div>
                                   <div class="modal-footer">
