@@ -13,10 +13,10 @@ class Equipos extends Migration
      */
     public function up()
     {
-      Schema::create('Equipo', function (Blueprint $table) {
+      Schema::create('Equipos', function (Blueprint $table) {
           $table->id();
           $table->string('Nombre');
-          $table->integer('id_Entrenador')
+          $table->integer('id_Entrenador');
           $table->rememberToken();
           $table->timestamps();
       });
