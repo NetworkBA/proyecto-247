@@ -150,7 +150,6 @@
                                                     </label><input class="form-control" type="date" />
                                                   </div>
                                                 </div>
-
                                             </div>
 
                                     </div>
