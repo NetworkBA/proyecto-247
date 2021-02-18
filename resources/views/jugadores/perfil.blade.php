@@ -164,7 +164,7 @@
                     </div>
                     <div class="card shadow">
                         <div class="card-header py-3">
-                            <p class="text-primary m-0 font-weight-bold">Datos Contacto</p>
+                            <p class="text-primary m-0 font-weight-bold">Datos de Equipo</p>
                         </div>
                         <div class="card-body">
                             <form>
