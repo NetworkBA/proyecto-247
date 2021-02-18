@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class historial_deportivo extends Model
 {
     use HasFactory;
+    
+    protected $table = ['id'];
 }
