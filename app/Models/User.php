@@ -25,6 +25,7 @@ class User extends Authenticatable
         'FechaNacimiento',
         'id_TipoUsuario',
         'id_HistorialDeportivo',
+        'id_HistorialMedico',
     ];
 
     /**
