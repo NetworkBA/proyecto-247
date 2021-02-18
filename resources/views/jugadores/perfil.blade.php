@@ -168,13 +168,27 @@
                         </div>
                         <div class="card-body">
                             <form>
-                                <div class="form-group"><label for="address"><strong>Equipo</strong></label><input type="text" class="form-control" placeholder="Sunset Blvd, 38" name="address" /></div>
+                                <div class="form-group">
+                                  <label for="address">
+                                   <strong>Equipo</strong>
+                                  </label>
+                                  <input type="text" class="form-control" placeholder="" name="address" />
+                                </div>
                                 <div class="form-row">
                                     <div class="col">
-                                        <div class="form-group"><label for="city"><strong>Ciudad</strong></label><input type="text" class="form-control" placeholder="Los Angeles" name="city" /></div>
+                                        <div class="form-group">
+                                          <label for="city">
+                                            <strong>Ciudad</strong>
+                                          </label><input type="text" class="form-control" placeholder="" name="" />
+                                        </div>
                                     </div>
                                     <div class="col">
-                                        <div class="form-group"><label for="country"><strong>Estado</strong></label><input type="text" class="form-control" placeholder="USA" name="country" /></div>
+                                        <div class="form-group">
+                                          <label for="country">
+                                            <strong>Estado</strong>
+                                          </label>
+                                          <input type="text" class="form-control" placeholder="" name="" />
+                                        </div>
                                     </div>
                                 </div>
                             </form>
