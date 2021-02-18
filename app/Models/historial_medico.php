@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class historial_medico extends Model
 {
     use HasFactory;
+
+    protected $table = ['id'];
+
 }
