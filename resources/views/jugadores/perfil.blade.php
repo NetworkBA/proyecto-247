@@ -14,7 +14,7 @@
             </div>
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="text-primary font-weight-bold m-0">Projects</h6>
+                    <h6 class="text-primary font-weight-bold m-0">Habilidades</h6>
                 </div>
                 <div class="card-body">
                     <h4 class="small font-weight-bold">Dominación balon parado<span class="float-right">20%</span></h4>
