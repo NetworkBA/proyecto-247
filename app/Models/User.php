@@ -26,6 +26,7 @@ class User extends Authenticatable
         'id_TipoUsuario',
         'id_HistorialDeportivo',
         'id_HistorialMedico',
+        'imagedeusuario',
     ];
 
     /**
