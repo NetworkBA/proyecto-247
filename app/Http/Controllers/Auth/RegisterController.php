@@ -76,7 +76,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'id_TipoUsuario' => 5,
-            'id_HistorialDeportivo' => $historialdeportivo['id'];
+            'id_HistorialDeportivo' => $historialdeportivo['id'],
         ]);
     }
 }
