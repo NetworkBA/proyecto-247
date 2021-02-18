@@ -9,5 +9,6 @@ class historial_deportivo extends Model
 {
     use HasFactory;
     protected $table = "HistorialDeportivo";
-      protected $fillable = ['id'];
+
+    protected $fillable = ['id'];
 }
