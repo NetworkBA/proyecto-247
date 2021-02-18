@@ -81,7 +81,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'id_TipoUsuario' => 5,
             'id_HistorialDeportivo' => $historialdeportivo['id'],
-            'id_HistorialMedico' => $historialmedico['id'],
+            'id_HistorialMedico' => $historialdeportivo['id'],
         ]);
     }
 }
