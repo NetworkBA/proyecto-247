@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Models\historial_deportivo;
+use App\Models\historial_medico;
 
 
 class RegisterController extends Controller
@@ -68,6 +69,9 @@ class RegisterController extends Controller
     {
         $historialdeportivo = new historial_deportivo;
         $historialdeportivo->save();
+        $historialmedico = new historial_medico;
+        $historialmedico->save();
+
         return User::create([
             'name' => $data['name'],
             'ApellidoP' => $data['ApellidoP'],
@@ -77,6 +81,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'id_TipoUsuario' => 5,
             'id_HistorialDeportivo' => $historialdeportivo['id'],
+            'id_HistorialMedico' => $historialmedico['id'],
         ]);
     }
 }
