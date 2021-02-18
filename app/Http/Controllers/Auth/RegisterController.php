@@ -82,7 +82,7 @@ class RegisterController extends Controller
             'id_TipoUsuario' => 5,
             'id_HistorialDeportivo' => $historialdeportivo['id'],
             'id_HistorialMedico' => $historialmedico['id'],
-            'imagedeusuario' => 'public/assets/img/avatars/avatar5.jpeg',
+            'imagedeusuario' => 'assets/img/avatars/avatar5.jpeg',
         ]);
     }
 }
