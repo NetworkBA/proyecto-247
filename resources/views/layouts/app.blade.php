@@ -34,6 +34,8 @@
                   <div class="sidebar-brand-text mx-3"><span>Proyecto-256</span></div>
               </a>
               <hr class="sidebar-divider my-0" />
+
+
               <ul class="nav navbar-nav text-light" id="accordionSidebar">
                   <li class="nav-item"><a class="nav-link" href="">
                     <i class="fas fa-tachometer-alt"></i><span>Noticias</span></a>
@@ -51,7 +53,7 @@
                     <i class="fas fa-user-circle"></i><span>Historial Deportivo</span></a>
                   </li>
               </ul>
-
+              
               <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
           </div>
       </nav>
