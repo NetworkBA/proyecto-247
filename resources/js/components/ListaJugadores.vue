@@ -45,12 +45,12 @@
                             </div>
                           </div>
 
-                          <div class="form-group row">
-                            <label for="example-date-input" class="col-2 col-form-label">Fecha de Nacimiento</label>
-                            <div class="col-10">
-                              <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento">
-                            </div>
+                          <div class="form-group">
+                            <label for="inputAddress">Fecha de Nacimiento</label>
+                            <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento">
                           </div>
+
+
 
                           <div class="form-row">
                             <div class="form-group col-md-6">
