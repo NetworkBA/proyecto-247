@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class TiposUsuarios extends Seeder
 {
@@ -42,14 +43,14 @@ class TiposUsuarios extends Seeder
     ]);
     DB::table('users')->insert([
      'name' => 'Ninguno', 'ApellidoP' => 'Ninguno','ApellidoM' => 'Ninguno','FechaNacimiento' => Carbon::parse('2000-01-01'),'id_TipoUsuario' => 2,
-     'id_HistorialDeportivo' => 1,'id_HistorialMedico' => 1,'email' => 'ninguno@gmail.com','password' => 'patata12345678','imagedeusuario' => 'ninguno',
+     'id_HistorialDeportivo' => 1,'id_HistorialMedico' => 1,'email' => 'ninguno@gmail.com','password' => Hash::make('patata12345678'),'imagedeusuario' => 'ninguno',
     ]);
     DB::table('Equipos')->insert([
       'Nombre' => 'ninguno','id_Entrenador' => 1,
     ]);
     DB::table('users')->insert([
      'name' => 'admi', 'ApellidoP' => 'Ninguno','ApellidoM' => 'Ninguno','FechaNacimiento' => Carbon::parse('2000-01-01'),'id_TipoUsuario' => 1,
-     'id_HistorialDeportivo' => 1,'id_HistorialMedico' => 1,'email' => 'admi@gmail.com','password' => 'patata12345678','imagedeusuario' => 'ninguno',
+     'id_HistorialDeportivo' => 1,'id_HistorialMedico' => 1,'email' => 'admi@gmail.com','password' => Hash::make('patata12345678'),'imagedeusuario' => 'ninguno',
     ]);
 
     }
