@@ -35,9 +35,8 @@
                             <tr>
                                 <td><strong>Nombre</strong></td>
                                 <td><strong>Equipo</strong></td>
-                                <td><strong>Posición</strong></td>
-                                <td><strong>Edad</strong></td>
-                                <td><strong>Calificación</strong></td>
+                                <td><strong>Equipo</strong></td>
+
                             </tr>
                         </tfoot>
                     </table>
