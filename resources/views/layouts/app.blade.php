@@ -59,6 +59,8 @@
                   </li>
                       <?php if ( Auth::user()->id_TipoUsuario == 1): ?>
                         hola
+                        <?php else: ?>
+                          adios
                       <?php endif; ?>
                         @endguest
 
