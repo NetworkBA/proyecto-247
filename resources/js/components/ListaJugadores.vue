@@ -2,11 +2,9 @@
 
     <div class="card">
 
-
-
             <div class="card-header">
-                <p class="text-primary m-0 font-weight-bold">Jugadores</p>
-                <a href="#" class="btn btn-primary float-right" >Agregar Jugador</a>
+              Lista de Jugadores
+                <button class="btn btn-succes btn-sm" type="button">Crear Jugador</button>
 
             </div>
 
