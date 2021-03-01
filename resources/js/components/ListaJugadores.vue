@@ -34,13 +34,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for ="Jugadores in jugador" :key="jugador.id"> 
+                            <tr v-for ="Jugadores in jugador" > 
                                 <td>{{jugador.name + jugador.ApellidoP}}</td>
                                 <td></td>
-                                <td>Tokyo</td>
-                                <td>33</td>
-                                <td>2008/11/28</td>
-                                <td>$162,700</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                         <tfoot>
