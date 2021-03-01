@@ -42,7 +42,7 @@ class TiposUsuarios extends Seeder
     ]);
     DB::table('users')->insert([
      'name' => 'Ninguno', 'ApellidoP' => 'Ninguno','ApellidoM' => 'Ninguno','FechaNacimiento' => Carbon::parse('2000-01-01'),'id_TipoUsuario' => 2,
-     'id_HistorialDeportivo' => 0,'id_HistorialMedico' => 0,'email' => 'ninguno@gmail.com','password' => 'patata12',
+     'id_HistorialDeportivo' => 0,'id_HistorialMedico' => 0,'email' => 'ninguno@gmail.com','password' => 'patata12','imagedeusuario' => 'ninguno',
    ]);
 
 
