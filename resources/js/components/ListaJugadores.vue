@@ -4,7 +4,7 @@
         <h3 class="text-dark mb-4">Jugadores</h3>
 
         <div class="card shadow">
-            <div  class="d-flex flex-row-reverse bg-secondary"">
+            <div class="card-header py-3">
                 <p class="text-primary m-0 font-weight-bold">Información de Jugadores</p>
                 <a href="#" class="btn btn-primary">Agregar Jugador</a>
 
