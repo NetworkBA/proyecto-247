@@ -32,7 +32,9 @@ class HomeController extends Controller
     public function jugadores()
     {
       if (Auth::user()->id_TipoUsuario == 1) {
-         return view('administrador.jugadores');
+
+          $Jugadores = User::where('id_TipoUsuario','5')->get();
+         return view('administrador.jugadores',$Jugadores);
       }
     }
 }
