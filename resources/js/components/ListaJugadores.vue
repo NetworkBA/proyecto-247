@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                    <table class="table my-0" id="dataTable">
+                    <table class="table my-0" id="example">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
@@ -34,7 +34,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for ="jugador in Jugadores" :key="jugador.id" > 
+                            <tr v-for ="jugador in Jugadores" :key="jugador.id" >
                                 <td>{{jugador.name + jugador.ApellidoP}}</td>
                                 <td></td>
                                 <td></td>
@@ -78,6 +78,7 @@
 </template>
 
 <script>
+  import datables from 'datatables'
     export default {
         mounted() {
             console.log('Component Lista Jugadores Montada.')
@@ -104,6 +105,13 @@
           }
         },
           methods:{
+
+          mytable(){
+            $(document).ready( function () {
+                $('#myTable').DataTable();
+            } );
+          },
+
           getListaJugadores(){
         var urlEstud = "ListaJugadores";
         axios.get(urlEstud).then(response =>
