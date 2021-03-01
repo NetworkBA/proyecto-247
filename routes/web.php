@@ -30,3 +30,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/Jugadores', [App\Http\Controllers\HomeController::class, 'Jugadores']);
+
+Route::get('/ListaJugadores', [App\Http\Controllers\jugador::class, 'ListaJugadores']);

@@ -81,6 +81,22 @@
     export default {
         mounted() {
             console.log('Component Lista Jugadores Montada.')
-        }
+            this.getListaJugadores()
+
+        },
+        data()
+        {
+          return{
+          Estud: [],
+          }
+        },
+          methods:{
+          getListaJugadores(){
+        var urlEstud = "ListaJugadores";
+        axios.get(urlEstud).then(response =>
+        {
+          this.Jugadores = response.data
+        });
+          }
     }
 </script>
