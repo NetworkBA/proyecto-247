@@ -4,7 +4,7 @@
 
             <div class="card-header">
               Lista de Jugadores
-                <button class="btn btn-succes btn-sm" type="button">Crear Jugador</button>
+                <button class="btn btn-success btn-sm" type="button">Crear Jugador</button>
 
             </div>
 
