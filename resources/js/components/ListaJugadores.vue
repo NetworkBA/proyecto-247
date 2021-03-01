@@ -4,7 +4,28 @@
 
             <div class="card-header">
               Lista de Jugadores
-                <button class="btn btn-success btn-sm" type="button">Crear Jugador</button>
+                <button class="btn btn-success btn-sm" type="button" data-toggle='modal' data-target='#modalCrear'>Nuevo Jugador</button>
+
+                <!-- Modal -->
+                  <div class="modal fade" id="modalCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
             </div>
 
@@ -30,7 +51,7 @@
                                   <td></td>
                                   <td></td>
                                   <td>
-                                    <button class="btn btn-success btn-sm" type="button">Detalles</button>
+                                    <button class="btn btn-info btn-sm" type="button">Detalles</button>
                                     <button class="btn btn-primary btn-sm" type="button">Editar</button>
                                     <button class="btn btn-danger btn-sm" type="button">Eliminar</button>
                                   </td>
