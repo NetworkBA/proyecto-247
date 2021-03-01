@@ -88,6 +88,18 @@
         {
           return{
           Jugadores: [],
+          jugador:
+          {
+          name: '',
+          ApellidoP: '',
+          ApellidoM: '',
+          email: '',
+          FechaNacimiento: '',
+          id_TipoUsuario: '',
+          id_HistorialDeportivo: '',
+          id_HistorialMedico: '',
+          imagedeusuario: '',
+          },
           }
         },
           methods:{
