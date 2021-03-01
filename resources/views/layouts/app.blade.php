@@ -57,9 +57,7 @@
                   <li class="nav-item"><a class="nav-link" href="">
                     <i class="fas fa-user-circle"></i><span>Historial Deportivo</span></a>
                   </li>
-                        @if (Auth::user()->id_TipoUsuario::has('2'))
-                        hola
-                        @endif
+                      
                         @endguest
 
 
