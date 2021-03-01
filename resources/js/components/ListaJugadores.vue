@@ -84,7 +84,7 @@
               $(document).ready( function () {
               $('#myTable').DataTable();
               } );
-          }
+          },
           getListaJugadores(){
         var urlEstud = "ListaJugadores";
         axios.get(urlEstud).then(response =>
