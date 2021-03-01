@@ -87,7 +87,7 @@
         data()
         {
           return{
-          Estud: [],
+          Jugadores: [],
           }
         },
           methods:{
