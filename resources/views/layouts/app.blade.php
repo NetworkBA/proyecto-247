@@ -42,7 +42,9 @@
                   </li>
 
                   @guest
-                      @if (Route::has('register'))
+                      @if (Route::has('login'))
+                      @endif
+                      @else
                   <li class="nav-item"><a class="nav-link active" href="perfil">
                     <i class="fas fa-user"></i><span>Perfil</span></a>
                   </li>
@@ -55,7 +57,7 @@
                   <li class="nav-item"><a class="nav-link" href="">
                     <i class="fas fa-user-circle"></i><span>Historial Deportivo</span></a>
                   </li>
-                        @endif
+                        
                         @endguest
 
 
