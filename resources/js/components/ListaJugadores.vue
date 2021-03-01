@@ -1,11 +1,11 @@
 <template>
 
-    <div class="container-fluid">
-        <h3 class="text-dark mb-4">Jugadores</h3>
+    <div class="card">
 
-        <div class="card shadow">
-            <div class="card-header py-3">
-                <p class="text-primary m-0 font-weight-bold">Información de Jugadores</p>
+
+
+            <div class="card-header">
+                <p class="text-primary m-0 font-weight-bold">Jugadores</p>
                 <a href="#" class="btn btn-primary float-right" >Agregar Jugador</a>
 
             </div>
@@ -15,8 +15,8 @@
 
 
                 </div>
-                <div class="table-responsive" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                    <table class="table my-0" id="sampleTable">
+                <div class="table-responsive" >
+                    <table class="table table-hover table-bordered" id="sampleTable">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
@@ -40,8 +40,6 @@
                                 <td><strong>Equipo</strong></td>
                                 <td><strong>Liga</strong></td>
                                 <td><strong>Acciones</strong></td>
-
-
                             </tr>
                         </tfoot>
                     </table>
@@ -53,8 +51,8 @@
 
                 </div>
             </div>
-        </div>
-    </div>
+      </div>
+
 
 </template>
 
