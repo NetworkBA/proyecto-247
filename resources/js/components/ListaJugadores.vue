@@ -38,18 +38,18 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td><strong>Name</strong></td>
-                                <td><strong>Position</strong></td>
-                                <td><strong>Office</strong></td>
-                                <td><strong>Age</strong></td>
-                                <td><strong>Start date</strong></td>
-                                <td><strong>Salary</strong></td>
+                                <td><strong>Nombre</strong></td>
+                                <td><strong>Equipo</strong></td>
+                                <td><strong>Posición</strong></td>
+                                <td><strong>Edad</strong></td>
+                                <td><strong>Fecha de Inicio date</strong></td>
+                                <td><strong>Calificación</strong></td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
                 <div class="row">
-                    
+
                     <div class="col-md-6">
 
                     </div>
