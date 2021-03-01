@@ -6,7 +6,7 @@
         <div class="card shadow">
             <div class="card-header py-3">
                 <p class="text-primary m-0 font-weight-bold">Información de Jugadores</p>
-                <a href="#" class="btn btn-primary">Agregar Jugador</a>
+                <a href="#" class="btn btn-primary" style="margin-left: -6.4vW;">Agregar Jugador</a>
 
             </div>
 
