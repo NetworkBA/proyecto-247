@@ -47,6 +47,10 @@ class TiposUsuarios extends Seeder
     DB::table('Equipos')->insert([
       'Nombre' => 'ninguno','id_Entrenador' => 1,
     ]);
+    DB::table('users')->insert([
+     'name' => 'admi', 'ApellidoP' => 'Ninguno','ApellidoM' => 'Ninguno','FechaNacimiento' => Carbon::parse('2000-01-01'),'id_TipoUsuario' => 1,
+     'id_HistorialDeportivo' => 1,'id_HistorialMedico' => 1,'email' => 'admi@gmail.com','password' => 'patata12','imagedeusuario' => 'ninguno',
+    ]);
 
     }
 }
