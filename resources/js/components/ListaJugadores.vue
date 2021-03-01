@@ -21,12 +21,15 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Equipo</th>
-                                <th>Calificación</th>
+                                <th>Liga</th>
+                                <th>Acciones</th>
+
                             </tr>
                         </thead>
                         <tbody>
                               <tr v-for ="jugador in Jugadores" :key="jugador.id" >
                                   <td>{{jugador.name + ' ' + jugador.ApellidoP + ' '+ jugador.ApellidoM +  ''}}</td>
+                                  <td></td>
                                   <td></td>
                                   <td></td>
                               </tr>
@@ -35,7 +38,9 @@
                             <tr>
                                 <td><strong>Nombre</strong></td>
                                 <td><strong>Equipo</strong></td>
-                                <td><strong>Equipo</strong></td>
+                                <td><strong>Liga</strong></td>
+                                <td><strong>Acciones</strong></td>
+
 
                             </tr>
                         </tfoot>
