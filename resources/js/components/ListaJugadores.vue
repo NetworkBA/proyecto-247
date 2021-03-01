@@ -23,7 +23,6 @@
                                 <th>Equipo</th>
                                 <th>Posición</th>
                                 <th>Edad</th>
-                                <th>Fecha de Inicio</th>
                                 <th>Calificación</th>
                             </tr>
                         </thead>
@@ -43,7 +42,6 @@
                                 <td><strong>Equipo</strong></td>
                                 <td><strong>Posición</strong></td>
                                 <td><strong>Edad</strong></td>
-                                <td><strong>Fecha de Inicio</strong></td>
                                 <td><strong>Calificación</strong></td>
                             </tr>
                         </tfoot>
@@ -53,7 +51,7 @@
                     <div class="col-md-6 align-self-center">
                         <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
