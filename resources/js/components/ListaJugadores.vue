@@ -16,7 +16,7 @@
 
                 </div>
                 <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                    <table class="table my-0" id="sampleTable">
+                    <table  id="sampleTable">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
