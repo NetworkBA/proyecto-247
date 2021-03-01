@@ -59,7 +59,7 @@
                         <li class="nav-item"><a class="nav-link" href="">
                           <i class="fas fa-user-circle"></i><span>Historial Deportivo</span></a>
                         </li>
-                      <?php elseif (Auth::user()->id_TipoUsuario == 1)  ?>
+                      <?php elseif (Auth::user()->id_TipoUsuario == 1):  ?>
                         <li class="nav-item"><a class="nav-link" href="">
                           <i class="fas fa-user-circle"></i><span>Jugadores</span></a>
                         </li>
