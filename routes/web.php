@@ -29,6 +29,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/Jugadores', function () {
-    return view('jugadores.perfil');
+Route::get('/Jugadores', [App\Http\Controllers\HomeController::class, 'Jugadores']);
 });
