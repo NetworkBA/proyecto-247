@@ -40,6 +40,8 @@
                   <li class="nav-item"><a class="nav-link" href="">
                     <i class="fas fa-tachometer-alt"></i><span>Noticias</span></a>
                   </li>
+                  @guest
+                      @if (Route::has('login'))
                   <li class="nav-item"><a class="nav-link active" href="perfil">
                     <i class="fas fa-user"></i><span>Perfil</span></a>
                   </li>
@@ -52,8 +54,10 @@
                   <li class="nav-item"><a class="nav-link" href="">
                     <i class="fas fa-user-circle"></i><span>Historial Deportivo</span></a>
                   </li>
+                  @endif
+
               </ul>
-              
+
               <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
           </div>
       </nav>
