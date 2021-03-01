@@ -30,6 +30,8 @@ class HomeController extends Controller
 
     public function jugadores()
     {
-      
+      if (Auth::user()->id_TipoUsuario == 1) {
+         return view('administrador.jugadores');
+      }
     }
 }
