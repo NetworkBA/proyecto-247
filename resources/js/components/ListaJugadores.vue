@@ -35,8 +35,8 @@
                         </thead>
                         <tbody>
                             <tr v-for ="Jugadores in jugador" :key="jugador.id">
-                                <td><img class="rounded-circle mr-2" width="30" height="30" src="avatars/avatar1.jpeg" />Airi Satou</td>
-                                <td>{{jugador.name + jugador.ApellidoP}}</td>
+                                <td><img class="rounded-circle mr-2" width="30" height="30" src="{{jugador.imagedeusuario}}" />{{jugador.name + jugador.ApellidoP}}</td>
+                                <td></td>
                                 <td>Tokyo</td>
                                 <td>33</td>
                                 <td>2008/11/28</td>
@@ -90,6 +90,7 @@
           Jugadores: [],
           jugador:
           {
+          id: '',
           name: '',
           ApellidoP: '',
           ApellidoM: '',
