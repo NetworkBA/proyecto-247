@@ -45,22 +45,27 @@
                       @if (Route::has('login'))
                       @endif
                       @else
-                  <li class="nav-item"><a class="nav-link active" href="perfil">
-                    <i class="fas fa-user"></i><span>Perfil</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="">
-                    <i class="fas fa-table"></i><span>Equipos</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="">
-                    <i class="far fa-user-circle"></i><span>Historial Medico</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link" href="">
-                    <i class="fas fa-user-circle"></i><span>Historial Deportivo</span></a>
-                  </li>
-                      <?php if ( Auth::user()->id_TipoUsuario == 1): ?>
-                        hola
-                        <?php else: ?>
-                          adios
+                      <li class="nav-item"><a class="nav-link active" href="perfil">
+                        <i class="fas fa-user"></i><span>Perfil</span></a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="">
+                        <i class="fas fa-table"></i><span>Equipos</span></a>
+                      </li>
+
+                      <?php if ( Auth::user()->id_TipoUsuario == 5): ?>
+                        <li class="nav-item"><a class="nav-link" href="">
+                          <i class="far fa-user-circle"></i><span>Historial Medico</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="">
+                          <i class="fas fa-user-circle"></i><span>Historial Deportivo</span></a>
+                        </li>
+                      <?php elseif (Auth::user()->id_TipoUsuario == 1)  ?>
+                        <li class="nav-item"><a class="nav-link" href="">
+                          <i class="fas fa-user-circle"></i><span>Jugadores</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="">
+                          <i class="fas fa-user-circle"></i><span>Personal</span></a>
+                        </li>
                       <?php endif; ?>
                         @endguest
 
