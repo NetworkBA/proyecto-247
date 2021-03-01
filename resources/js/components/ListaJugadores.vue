@@ -28,7 +28,7 @@
                               <input type="password" class="form-control" id="inputPassword4">
                             </div>
                           </div>
-                          
+
                           <div class="form-group">
                             <label for="inputAddress">Nombre</label>
                             <input type="text" class="form-control" id="nombre" placeholder="Miguel Jesus">
@@ -42,6 +42,13 @@
                             <div class="form-group col-md-6">
                               <label for="inputPassword4">Apellido Materno</label>
                               <input type="text" class="form-control" id="ApellidoM">
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label for="example-date-input" class="col-2 col-form-label">Fecha de Nacimiento</label>
+                            <div class="col-10">
+                              <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento">
                             </div>
                           </div>
 
