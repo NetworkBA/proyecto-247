@@ -34,7 +34,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for ="Jugadores in jugador" > 
+                            <tr v-for ="Jugadores in jugador" :key="Jugadores.id" > 
                                 <td>{{jugador.name + jugador.ApellidoP}}</td>
                                 <td></td>
                                 <td></td>
