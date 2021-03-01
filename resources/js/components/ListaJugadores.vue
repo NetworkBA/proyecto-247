@@ -81,7 +81,7 @@
 </template>
 
 <script>
-    import datatable from 'datatables.net.bs4'
+    import datatable from 'datatables.net-bs4'
     export default {
         mounted() {
             console.log('Component Lista Jugadores Montada.')
