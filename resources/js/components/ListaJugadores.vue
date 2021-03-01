@@ -10,7 +10,7 @@
             <div class="card-body">
 
                 <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                    <table class="table my-0" id="dataTable">
+                    <table class="table my-0" id="dataTable" id="myTable">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
@@ -43,7 +43,7 @@
                         </tfoot>
                     </table>
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -77,12 +77,21 @@
           }
         },
           methods:{
+
+
+          gettables()
+          {
+              $(document).ready( function () {
+              $('#myTable').DataTable();
+              } );
+          }
           getListaJugadores(){
         var urlEstud = "ListaJugadores";
         axios.get(urlEstud).then(response =>
         {
           this.Jugadores = response.data
         });
+        this.gettables()
           }
     }
     }
