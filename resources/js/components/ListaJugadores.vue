@@ -20,22 +20,31 @@
                         <form>
                           <div class="form-row">
                             <div class="form-group col-md-6">
-                              <label for="inputEmail4">Email</label>
+                              <label for="inputEmail4">Correo Electronico</label>
                               <input type="email" class="form-control" id="inputEmail4">
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="inputPassword4">Password</label>
+                              <label for="inputPassword4">Contraseña</label>
                               <input type="password" class="form-control" id="inputPassword4">
                             </div>
                           </div>
+                          
                           <div class="form-group">
-                            <label for="inputAddress">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <label for="inputAddress">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Miguel Jesus">
                           </div>
-                          <div class="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Apellido Paterno</label>
+                              <input type="text" class="form-control" id="ApellidoP">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Apellido Materno</label>
+                              <input type="text" class="form-control" id="ApellidoM">
+                            </div>
                           </div>
+
                           <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputCity">City</label>
