@@ -106,19 +106,17 @@
         },
           methods:{
 
-          mytable(){
-            $(document).ready( function () {
-                $('#myTable').DataTable();
-            } );
-          },
+                  mytable(){
+                    $(document).ready( function () {
+                        $('#myTable').DataTable();
+                    } );
+                  },
 
-          getListaJugadores(){
-        var urlEstud = "ListaJugadores";
-        axios.get(urlEstud).then(response =>
-        {
-          this.Jugadores = response.data
-        });
+                  getListaJugadores(){
+                      this.mytable()
+                      var urlEstud = "ListaJugadores";
+                      axios.get(urlEstud).then(response =>  { this.Jugadores = response.data});
+                  }
           }
-    }
     }
 </script>
