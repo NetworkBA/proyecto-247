@@ -29,7 +29,11 @@
                                   <td>{{jugador.name + ' ' + jugador.ApellidoP + ' '+ jugador.ApellidoM +  ''}}</td>
                                   <td></td>
                                   <td></td>
-                                  <td></td>
+                                  <td>
+                                    <button class="btn btn-success btn-sm" type="button">Detalles</button>
+                                    <button class="btn btn-success btn-sm" type="button">Editar</button>
+                                    <button class="btn btn-success btn-sm" type="button">Eliminar</button>
+                                  </td>
                               </tr>
                         </tbody>
                         <tfoot>
