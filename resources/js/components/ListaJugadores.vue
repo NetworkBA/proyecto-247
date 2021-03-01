@@ -35,7 +35,7 @@
                         </thead>
                         <tbody>
                             <tr v-for ="Jugadores in jugador" :key="jugador.id">
-                                <td><img class="rounded-circle mr-2" width="30" height="30" src="" />{{jugador.name + jugador.ApellidoP}}</td>
+                                <td>{{jugador.name + jugador.ApellidoP}}</td>
                                 <td></td>
                                 <td>Tokyo</td>
                                 <td>33</td>
