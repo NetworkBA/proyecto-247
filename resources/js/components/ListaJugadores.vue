@@ -51,6 +51,7 @@
 </template>
 
 <script>
+    import datable from "datatables"
     export default {
         mounted() {
             console.log('Component Lista Jugadores Montada.')
