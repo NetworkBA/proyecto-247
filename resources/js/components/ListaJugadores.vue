@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
-                    <table class="table my-0" id="dataTable">
+                    <table class="table my-0" id="sampleTable">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
@@ -81,11 +81,12 @@
 </template>
 
 <script>
+    import datatable from 'datatables.net.bs4'
     export default {
         mounted() {
             console.log('Component Lista Jugadores Montada.')
             this.getListaJugadores()
-
+            this.tabla()
         },
         data()
         {
@@ -107,6 +108,12 @@
           }
         },
           methods:{
+          tabla()
+          {
+            this.$nextTick(() => {
+            $('#sampleTable').DataTable();
+            });
+          },
           getListaJugadores(){
         var urlEstud = "ListaJugadores";
         axios.get(urlEstud).then(response =>
