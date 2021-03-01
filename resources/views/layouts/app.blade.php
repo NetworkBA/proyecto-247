@@ -40,8 +40,9 @@
                   <li class="nav-item"><a class="nav-link" href="">
                     <i class="fas fa-tachometer-alt"></i><span>Noticias</span></a>
                   </li>
+
                   @guest
-                      @if (Route::has('login'))
+                      @if (Route::has('register'))
                   <li class="nav-item"><a class="nav-link active" href="perfil">
                     <i class="fas fa-user"></i><span>Perfil</span></a>
                   </li>
