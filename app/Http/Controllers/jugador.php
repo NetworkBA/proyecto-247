@@ -8,7 +8,7 @@ use App\Models\User;
 
 class jugador extends Controller
 {
-    public class function ListaJugadores()
+    public  function ListaJugadores()
     {
         $Jugadores = User::where('id_TipoUsuario','5')->get();
 
