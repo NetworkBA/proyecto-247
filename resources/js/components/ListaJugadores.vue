@@ -18,36 +18,37 @@
                         </div>
                         <div class="modal-body">
                         <form>
+
                           <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputEmail4">Correo Electronico</label>
-                              <input type="email" class="form-control" id="inputEmail4">
+                              <input type="email" class="form-control" id="inputEmail4" v-model="Crearjugador.email">
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputPassword4">Contraseña</label>
-                              <input type="password" class="form-control" id="inputPassword4">
+                              <input type="password" class="form-control" id="inputPassword4" value="123456789">
                             </div>
                           </div>
 
                           <div class="form-group">
                             <label for="inputAddress">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Miguel Jesus">
+                            <input type="text" class="form-control" id="nombre" placeholder="Miguel Jesus" v-model="Crearjugador.name">
                           </div>
 
                           <div class="form-row">
                             <div class="form-group col-md-6">
                               <label for="inputEmail4">Apellido Paterno</label>
-                              <input type="text" class="form-control" id="ApellidoP">
+                              <input type="text" class="form-control" id="ApellidoP" v-model="Crearjugador.ApellidoP">
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputPassword4">Apellido Materno</label>
-                              <input type="text" class="form-control" id="ApellidoM">
+                              <input type="text" class="form-control" id="ApellidoM" v-model="Crearjugador.ApellidoM">
                             </div>
                           </div>
 
                           <div class="form-group">
                             <label for="inputAddress">Fecha de Nacimiento</label>
-                            <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento">
+                            <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento" v-model="Crearjugador.FechaNacimiento">
                           </div>
 
                           </form>
@@ -124,18 +125,13 @@
         {
           return{
           Jugadores: [],
-          jugador:
+          Crearjugador:
           {
-          id: '',
-          name: '',
-          ApellidoP: '',
-          ApellidoM: '',
-          email: '',
-          FechaNacimiento: '',
-          id_TipoUsuario: '',
-          id_HistorialDeportivo: '',
-          id_HistorialMedico: '',
-          imagedeusuario: '',
+            name: '',
+            ApellidoP: '',
+            ApellidoM: '',
+            email: '',
+            FechaNacimiento: '',
           },
           }
         },
