@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\equipo;
+use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 
 use App\Models\ligamodel;
@@ -34,10 +35,15 @@ class equipos extends Controller
           'id_Entrenador' => ['required', 'numeric' ],
       ]);
 
-      return equipo::create([
-        'Nombre' => $data['name'],
-        'id_Entrenador' => $data['id_Entrenador'],
-        'id_Liga' => $data['id_Liga'],
-      ]);
+      $equipo = new equipo($data['name'],$data['id_Entrenador'], $data['id_Liga']  );
+      $equipo->save();
+
+      $entrendador = User::find($data['id_Entrenador']);
+      $entrendador->id_Equipo = $equipo->id;
+      $entrendador->save();
+
+      return $equipo;
+
+
     }
 }
