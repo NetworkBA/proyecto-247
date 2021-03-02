@@ -22,7 +22,7 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('menu-component', require('./components/Menu.vue').default);
 Vue.component('listajugadores-component', require('./components/ListaJugadores.vue').default);
-Vue.component('listaequipos-component', require('./components/ListaEquipos.vue').default);
+Vue.component('listaequipos-component', require('./components/ListadeEquipos.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
