@@ -108,6 +108,7 @@
         {
           return{
           Equipos: [],
+          Ligas: [],
           Crearequipo:
           {
             name: '',
@@ -147,14 +148,13 @@
                 $('#sampleTable').DataTable().destroy()
                 this.tabla()
               });
+              this.getLigas()
           },
           getLigas()
           {
-          axios.get('ListaLigas').then(response =>{
-            this.Equipos = response.data
-            $('#sampleTable').DataTable().destroy()
-            this.tabla()
-          });
+            axios.get('ListaLigas').then(response =>{
+              this.Ligas = response.data
+            });
           },
 
 
