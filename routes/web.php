@@ -37,6 +37,8 @@ Route::post('/CrearJugador', [App\Http\Controllers\jugador::class, 'CrearJugador
 
 
 Route::get('/ListaEquipos', [App\Http\Controllers\equipos::class, 'ListaEquipos']);
+Route::get('/ListaEquipos', [App\Http\Controllers\equipos::class, 'ListaEquipos2']);
+
 
 Route::get('/Equipos', [App\Http\Controllers\HomeController::class, 'Equipos']);
 

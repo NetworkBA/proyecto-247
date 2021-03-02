@@ -22,7 +22,15 @@ class equipos extends Controller
 
         return $data;
     }
+    public function ListaEquipos2()
+    {
 
+        $data =  equipo::select('Equipos.id','Equipos.Nombre','users.name','users.ApellidoP','users.ApellidoM','Liga.Nombre as LigaNombre' )
+        ->join('users','Equipos.id_Entrenador','=','users.id')->join('Liga','Equipos.id_Liga','=','Liga.id')
+        ->get();
+
+        return $data;
+    }
     public function ListaLigas()
     {
         return ligamodel::all();

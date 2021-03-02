@@ -172,7 +172,7 @@
 
           getEquipos()
           {
-              axios.get('ListaEquipos').then(response =>{
+              axios.get('ListaEquipos2').then(response =>{
                 this.Equipos = response.data
               });
           },
