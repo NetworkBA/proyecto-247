@@ -7,7 +7,7 @@
                 <button class="btn btn-success btn-sm" type="button" data-toggle='modal' data-target='#modalCrear'>Nuevo Jugador</button>
 
                 <!-- Modal -->
-                  <div class="modal " id="modalCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal" id="modalCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
