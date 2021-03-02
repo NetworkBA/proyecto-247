@@ -36,7 +36,7 @@ class equipos extends Controller
       ]);
 
       $equipo = new equipo();
-      $equipo->name = $data['name'];
+      $equipo->Nombre = $data['name'];
       $equipo->id_Entrenador = $data['id_Entrenador'];
       $equipo->id_Liga = $data['id_Liga'];
       $equipo->save();
