@@ -20,7 +20,7 @@ class jugador extends Controller
         return $Jugadores;
     }
 
-          public function Crearjugador(Request $data)
+          public function Crearjugador(array $data)
           {
             $data = request()->validate([
                 'name' => ['required', 'string', 'max:255'],
