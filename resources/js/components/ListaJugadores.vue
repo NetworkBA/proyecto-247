@@ -32,7 +32,7 @@
 
                           <div class="form-group">
                             <label for="inputAddress">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Miguel Jesus" v-model="Crearjugador.name">
+                            <input type="text" class="form-control" id="name" placeholder="Miguel Jesus" v-model="Crearjugador.name">
                           </div>
 
                           <div class="form-row">
@@ -133,6 +133,7 @@
             email: '',
             FechaNacimiento: '',
           },
+
           }
         },
           methods:{
@@ -155,7 +156,7 @@
           crear()
           {
 
-            axios.post('CrearJugador',this.CrearJugador).then(response =>{
+            axios.post('CrearJugador',this.Crearjugador).then(response =>{
               this.getListaJugadores()
               $('#modalCrear').modal('hide')
             }).catch(function(error){
