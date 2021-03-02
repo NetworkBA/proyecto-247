@@ -43,3 +43,5 @@ Route::get('/Equipos', [App\Http\Controllers\HomeController::class, 'Equipos']);
 Route::get('/ListaLigas', [App\Http\Controllers\equipos::class, 'ListaLigas']);
 
 Route::get('/ListaEntrenadores', [App\Http\Controllers\entrenadores_controller::class, 'ListaEntrenadores']);
+
+Route::get('/Crearequipo', [App\Http\Controllers\equipos::class, 'Crearequipo']);
