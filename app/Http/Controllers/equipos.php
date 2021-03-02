@@ -35,7 +35,10 @@ class equipos extends Controller
           'id_Entrenador' => ['required', 'numeric' ],
       ]);
 
-      $equipo = new equipo($data['name'],$data['id_Entrenador'], $data['id_Liga']  );
+      $equipo = new equipo($data[);
+      $equipo->name = $data['name'];
+      $equipo->id_Entrenador = $data['id_Entrenador'];
+      $equipo->id_Liga = $data['id_Liga'];
       $equipo->save();
 
       $entrendador = User::find($data['id_Entrenador']);
