@@ -65,7 +65,7 @@
                         <tbody>
                               <tr v-for ="equipo in Equipos" :key="equipo.id" >
                                   <td>{{equipo.Nombre}}</td>
-                                  <td>{{equipo.id_Liga}}</td>
+                                  <td>{{equipo.LigaNombre}}</td>
                                   <td>{{equipo.id_Entrenador}}</td>
                                   <td>
                                     <button class="btn btn-info btn-sm" type="button">Detalles</button>

@@ -11,5 +11,5 @@ class equipo extends Model
       protected $table = "Equipos";
 
       protected $fillable = ['id','Nombre','id_Entrenador','id_Liga'];
-
+          
 }

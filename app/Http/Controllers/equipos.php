@@ -12,7 +12,8 @@ class equipos extends Controller
 {
     public function ListaEquipos()
     {
-        return equipo::all();
+        return equipo::select('Equipos.id','Equipos.Nombre','users.name','users.ApellidoP','users.ApellidoM','Liga.Nombre')
+        ->join('users','equipo.id_Entrenador','=','users.id')->join('Liga','equipo.id_Liga','=','Liga.id')->get();
     }
 
     public function ListaLigas()
