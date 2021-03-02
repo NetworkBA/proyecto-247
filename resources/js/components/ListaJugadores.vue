@@ -160,6 +160,10 @@
             axios.post('CrearJugador',this.Crearjugador).then(response =>{
               this.getListaJugadores()
               $('#modalCrear').modal('hide')
+              if ($('.modal-backdrop').is(':visible')) {
+                    $('body').removeClass('modal-open');
+                    $('.modal-backdrop').remove();
+              };
               swal("Felicidades!","Nuevo Jugador Registrado","success");
             }).catch(function(error){
               //
