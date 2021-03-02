@@ -29,15 +29,15 @@
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Liga</label>
-                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.id_Liga" required>
-                                <option v-for="liga in Ligas" :value="liga.id">{{liga.Nombre}}</option>
+                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.id_Liga" >
+                                <option v-for="liga in Ligas" :value="liga.id" required >{{liga.Nombre}}</option>
                             </select>
                           </div>
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Entrendador</label>
                             <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.id_Entrenador" required>
-                                <option v-for="Entrendador in Entrendadores" :value="Entrendador.id">{{Entrendador.name +' '+ Entrendador.ApellidoP + ' ' + Entrendador.ApellidoM }}</option>
+                                <option v-for="Entrendador in Entrendadores" :value="Entrendador.id" required>{{Entrendador.name +' '+ Entrendador.ApellidoP + ' ' + Entrendador.ApellidoM }}</option>
                             </select>
                           </div>
 
