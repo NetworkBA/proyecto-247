@@ -164,7 +164,7 @@
           axios.get('ListaEntrenadores').then(response =>{
             this.Entrendadores = response.data
           });
-          }
+          },
           crear()
           {
 
