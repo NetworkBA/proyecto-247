@@ -138,14 +138,14 @@
           crear()
           {
 
-            axios.post('CrearJugador',this.Crearjugador).then(response =>{
+            axios.post('Crearequipo',this.Crearequipo).then(response =>{
               this.getListaJugadores()
               $('#modalCrear').modal('hide')
               if ($('.modal-backdrop').is(':visible')) {
                     $('body').removeClass('modal-open');
                     $('.modal-backdrop').remove();
               };
-              swal("Felicidades!","Nuevo Jugador Registrado","success");
+              swal("Felicidades!","Nuevo Equipo Registrado","success");
             }).catch(function(error){
               //
             });
@@ -172,10 +172,7 @@
             this.Entrendadores = response.data
           });
           },
-          crear()
-          {
 
-          },
 
 
     }
