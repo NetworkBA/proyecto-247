@@ -45,3 +45,5 @@ Route::get('/ListaLigas', [App\Http\Controllers\equipos::class, 'ListaLigas']);
 Route::get('/ListaEntrenadores', [App\Http\Controllers\entrenadores_controller::class, 'ListaEntrenadores']);
 
 Route::post('/Crearequipo', [App\Http\Controllers\equipos::class, 'Crearequipo']);
+
+Route::post('/actualizarprofe', [App\Http\Controllers\equipos::class, 'actualizarprofe']);

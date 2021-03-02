@@ -140,6 +140,7 @@
 
             axios.post('Crearequipo',this.Crearequipo).then(response =>{
               this.getEquipos()
+              this.actualizarprofe()
               this.Crearequipo = {name: '',id_Liga: '',id_Entrenador: '',  }
               $('#modalCrear').modal('hide')
               if ($('.modal-backdrop').is(':visible')) {
@@ -150,6 +151,10 @@
             }).catch(function(error){
               //
             });
+          },
+          actualizarprofe()
+          {
+            axios.post('actualizarprofe',this.Crearequipo).then();
           },
           getEquipos()
           {
