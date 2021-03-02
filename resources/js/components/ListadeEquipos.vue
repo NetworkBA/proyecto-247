@@ -34,6 +34,13 @@
                             </select>
                           </div>
 
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Entrendador</label>
+                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.liga">
+                                <option v-for="Entrendador in Entrendadores" :value="Entrendador.id">{{Entrendador.name +' '+ Entrendador.ApellidoP + ' ' + Entrendador.ApellidoM }}</option>
+                            </select>
+                          </div>
+
                           </form>
                         </div>
                         <div class="modal-footer">
