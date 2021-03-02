@@ -169,6 +169,7 @@
               //
             });
           },
+          
           getEquipos()
           {
               axios.get('ListaEquipos').then(response =>{
