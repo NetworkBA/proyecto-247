@@ -63,7 +63,7 @@
                         </thead>
                         <tbody>
                               <tr v-for ="equipo in Equipos" :key="equipo.id" >
-                                  <td>{{equipo.name}}</td>
+                                  <td>{{equipo.Nombre}}</td>
                                   <td></td>
                                   <td>
                                     <button class="btn btn-info btn-sm" type="button">Detalles</button>
