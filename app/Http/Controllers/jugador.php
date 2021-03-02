@@ -38,7 +38,7 @@ class jugador extends Controller
             return User::create([
                 'name' => $data['name'],
                 'ApellidoP' => $data['ApellidoP'],
-                'ApellidoM' => $request->ApellidoM,
+                'ApellidoM' => $request->ApellidoM+" ",
                 'FechaNacimiento' =>$data['FechaNacimiento'],
                 'email' => $data['email'],
                 'password' => Hash::make('patata12345678'),
