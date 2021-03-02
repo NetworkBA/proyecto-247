@@ -51,6 +51,13 @@
                             <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento" v-model="Crearjugador.FechaNacimiento">
                           </div>
 
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Equipo</label>
+                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearjugador.id_Equipo">
+                                <option v-for="equipo in Equipos" :value="equipo.id">{{equipo.Nombre}}</option>
+                            </select>
+                          </div>
+
                           </form>
                         </div>
                         <div class="modal-footer">
@@ -133,6 +140,7 @@
             ApellidoP: '',
             ApellidoM: ' ',
             email: '',
+            id_Equipo: '',
             FechaNacimiento: '',
           },
 
