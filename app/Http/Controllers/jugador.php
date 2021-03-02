@@ -20,12 +20,13 @@ class jugador extends Controller
         return $Jugadores;
     }
 
-          public function Crearjugador(Request $request)
+          public function Crearjugador(Request $data)
           {
             $data = request()->validate([
                 'name' => ['required', 'string', 'max:255'],
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             ]);
+
             $historialdeportivo = new historial_deportivo;
             $historialdeportivo->save();
             $historialmedico = new historial_medico;
@@ -43,5 +44,5 @@ class jugador extends Controller
                 'id_HistorialMedico' => $historialmedico['id'],
                 'imagedeusuario' => 'assets/img/avatars/avatar5.jpeg',
             ]);
-        }
+         }
     }
