@@ -35,7 +35,7 @@ class equipos extends Controller
           'id_Entrenador' => ['required', 'numeric' ],
       ]);
 
-      $equipo = new equipo($data[);
+      $equipo = new equipo();
       $equipo->name = $data['name'];
       $equipo->id_Entrenador = $data['id_Entrenador'];
       $equipo->id_Liga = $data['id_Liga'];
