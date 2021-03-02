@@ -26,7 +26,6 @@ class jugador extends Controller
                 'name' => ['required', 'string', 'max:255'],
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'ApellidoP' => ['required', 'string' ],
-                'ApellidoM' => [ 'string' ],
                 'FechaNacimiento' => ['required', 'date'],
 
             ]);
@@ -39,7 +38,7 @@ class jugador extends Controller
             return User::create([
                 'name' => $data['name'],
                 'ApellidoP' => $data['ApellidoP'],
-                'ApellidoM' => $data['ApellidoM'],
+                'ApellidoM' => $request['ApellidoM'],
                 'FechaNacimiento' =>$data['FechaNacimiento'],
                 'email' => $data['email'],
                 'password' => Hash::make('patata12345678'),
