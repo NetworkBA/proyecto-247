@@ -45,7 +45,7 @@
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                          <button type="submit" class="btn btn-primary" @click.prevent="crear">Crear Equipo</button>
+                          <button type="button" class="btn btn-primary" @click.prevent="crear">Crear Equipo</button>
                         </div>
                       </div>
                     </div>
