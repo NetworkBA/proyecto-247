@@ -11,7 +11,7 @@
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Crear Jugador</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">Crear Equipo</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -110,6 +110,7 @@
           return{
           Equipos: [],
           Ligas: [],
+          Entrendadores: [],
           Crearequipo:
           {
             name: '',
@@ -150,12 +151,23 @@
                 this.tabla()
               });
               this.getLigas()
+              this.getEntrenadores()
           },
           getLigas()
           {
             axios.get('ListaLigas').then(response =>{
               this.Ligas = response.data
             });
+          },
+          getEntrenadores()
+          {
+          axios.get('ListaEntrenadores').then(response =>{
+            this.Entrendadores = response.data
+          });
+          }
+          crear()
+          {
+
           },
 
 
