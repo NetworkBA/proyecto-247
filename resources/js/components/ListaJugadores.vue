@@ -145,16 +145,7 @@
             $('#sampleTable').DataTable();
             });
           },
-          getListaJugadores(){
 
-              var urlEstud = "ListaJugadores";
-              getEquipos()
-              axios.get(urlEstud).then(response =>{
-                this.Jugadores = response.data
-                $('#sampleTable').DataTable().destroy()
-                this.tabla()
-              });
-          },
           crear()
           {
 
@@ -174,6 +165,16 @@
           {
               axios.get('ListaEquipos').then(response =>{
                 this.Equipos = response.data
+              });
+          },
+          getListaJugadores(){
+
+              var urlEstud = "ListaJugadores";
+              getEquipos()
+              axios.get(urlEstud).then(response =>{
+                this.Jugadores = response.data
+                $('#sampleTable').DataTable().destroy()
+                this.tabla()
               });
           },
 
