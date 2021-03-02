@@ -47,7 +47,7 @@ class equipos extends Controller
     {
       $profe = User::find($request->id_Entrenador);
       $nv = equipo::select('id')->where('id_Entrenador','=',$request->id_Entrenador)->first();
-      $profe->id_Equipo = $nv;
+      $profe->id_Equipo = $nv->id;
       $profe->save();
     }
 }
