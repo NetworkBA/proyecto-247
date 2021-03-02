@@ -149,7 +149,8 @@
               };
               swal("Felicidades!","Nuevo Equipo Registrado","success");
             }).catch(function(error){
-              //
+            swal("Error!","Erro Nuevo Equipo No Registrado","danger");
+
             });
           },
           actualizarprofe()

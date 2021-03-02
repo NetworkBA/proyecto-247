@@ -166,10 +166,10 @@
               };
               swal("Felicidades!","Nuevo Jugador Registrado","success");
             }).catch(function(error){
-              //
+              swal("Error","Error Jugador No Registrado","danger");
             });
           },
-          
+
           getEquipos()
           {
               axios.get('ListaEquipos').then(response =>{
