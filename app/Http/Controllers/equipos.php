@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\equipo;
+use Illuminate\Support\Facades\Auth;
 
 
 class equipos extends Controller
@@ -12,4 +13,6 @@ class equipos extends Controller
     {
         return equipo::all();
     }
+
+    
 }

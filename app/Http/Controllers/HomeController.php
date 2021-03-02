@@ -33,8 +33,17 @@ class HomeController extends Controller
     {
       if (Auth::user()->id_TipoUsuario == 1) {
 
-        
+
          return view('administrador.jugadores');
+      }
+    }
+
+    public function Equipos()
+    {
+      if (Auth::user()->id_TipoUsuario == 1) {
+
+
+         return view('administrador.equipos');
       }
     }
 }

@@ -65,7 +65,7 @@
                         <li class="nav-item"><a class="nav-link" href="">
                           <i class="fas fa-user-circle"></i><span>Personal</span></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="">
+                        <li class="nav-item"><a class="nav-link" href="Equipos">
                           <i class="fas fa-user-circle"></i><span>Equipos</span></a>
                         </li>
                       <?php endif; ?>
