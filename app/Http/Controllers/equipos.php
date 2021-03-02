@@ -34,7 +34,7 @@ class equipos extends Controller
           'id_Entrenador' => ['required', 'numeric' ],
       ]);
 
-      return User::create([
+      return equipo::create([
         'Nombre' => $data['name'],
         'id_Entrenador' => $data['id_Entrenador'],
         'id_Liga' => $data['id_Liga'],
