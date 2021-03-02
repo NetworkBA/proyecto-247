@@ -57,6 +57,7 @@
                             <tr>
                                 <th>Equipo</th>
                                 <th>Liga</th>
+                                <th>Entrendador</th>
                                 <th>Acciones</th>
 
                             </tr>
@@ -64,7 +65,8 @@
                         <tbody>
                               <tr v-for ="equipo in Equipos" :key="equipo.id" >
                                   <td>{{equipo.Nombre}}</td>
-                                  <td></td>
+                                  <td>{{equipo.id_Liga}}</td>
+                                  <td>{{equipo.id_Entrenador}}</td>
                                   <td>
                                     <button class="btn btn-info btn-sm" type="button">Detalles</button>
                                     <button class="btn btn-primary btn-sm" type="button">Editar</button>
@@ -109,7 +111,8 @@
           Crearequipo:
           {
             name: '',
-            liga: '',
+            id_Liga: '',
+            id_Entrenador: '',
           },
 
           }
@@ -144,6 +147,14 @@
                 $('#sampleTable').DataTable().destroy()
                 this.tabla()
               });
+          },
+          getLigas()
+          {
+          axios.get('ListaLigas').then(response =>{
+            this.Equipos = response.data
+            $('#sampleTable').DataTable().destroy()
+            this.tabla()
+          });
           },
 
 
