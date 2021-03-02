@@ -17,8 +17,12 @@ class Equipos extends Migration
         $table->increments('id');
           $table->string('Nombre');
           $table->integer('id_Entrenador');
+          $table->integer('id_Liga')->unsigned();
           $table->rememberToken();
           $table->timestamps();
+
+          $table->foreign('id_Liga')->references('id')->on('Liga')->onDelete('cascade');
+
       });
     }
 

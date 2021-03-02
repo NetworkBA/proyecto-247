@@ -13,7 +13,13 @@ class Ligasmigration extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('Liga', function (Blueprint $table) {
+        $table->increments('id');
+          $table->string('Nombre');
+          $table->integer('id_Entrenador');
+          $table->rememberToken();
+          $table->timestamps();
+      });
     }
 
     /**
@@ -21,8 +27,9 @@ class Ligasmigration extends Migration
      *
      * @return void
      */
-    public function down()
-    {
-        //
-    }
+     public function down()
+     {
+       Schema::dropIfExists('Liga');
+
+     }
 }
