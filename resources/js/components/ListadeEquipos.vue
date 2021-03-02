@@ -29,7 +29,7 @@
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Liga</label>
-                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.liga">
+                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.id_Liga">
                                 <option v-for="liga in Ligas" :value="liga.id">{{liga.Nombre}}</option>
                             </select>
                           </div>
