@@ -115,6 +115,7 @@
 
 <script>
     import datatable from 'datatables.net-bs4'
+    import swal from 'sweetalert';
     export default {
         mounted() {
             console.log('Component Lista Jugadores Montada.')
