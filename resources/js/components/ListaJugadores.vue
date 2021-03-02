@@ -170,7 +170,7 @@
           getListaJugadores(){
 
               var urlEstud = "ListaJugadores";
-              getEquipos()
+              this.getEquipos()
               axios.get(urlEstud).then(response =>{
                 this.Jugadores = response.data
                 $('#sampleTable').DataTable().destroy()
