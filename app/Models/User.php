@@ -25,6 +25,7 @@ class User extends Authenticatable
         'password',
         'FechaNacimiento',
         'id_TipoUsuario',
+        'id_Equipo',
         'id_HistorialDeportivo',
         'id_HistorialMedico',
         'imagedeusuario',
