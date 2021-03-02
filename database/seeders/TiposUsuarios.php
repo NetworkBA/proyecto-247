@@ -36,16 +36,16 @@ class TiposUsuarios extends Seeder
       'TipodeUsuarios' => 'Jugador',
     ]);
     DB::table('HistorialDeportivo')->insert([
-      'id' => 0,
+      'id' => 1,
     ]);
     DB::table('HistorialMedico')->insert([
-      'id' => 0,
+      'id' => 1,
     ]);
     DB::table('HistorialDeportivo')->insert([
-      'id' => 1,
+      'id' => 2,
     ]);
     DB::table('HistorialMedico')->insert([
-      'id' => 1,
+      'id' => 2,
     ]);
     DB::table('Liga')->insert([
       'Nombre' => 'a',
