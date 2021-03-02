@@ -33,4 +33,4 @@ Route::get('/Jugadores', [App\Http\Controllers\HomeController::class, 'Jugadores
 
 Route::get('/ListaJugadores', [App\Http\Controllers\jugador::class, 'ListaJugadores']);
 
-Route::post('/Crearjugador', [App\Http\Controllers\jugador::class, 'CrearJugador']);
+Route::post('/CrearJugador', [App\Http\Controllers\jugador::class, 'CrearJugador']);
