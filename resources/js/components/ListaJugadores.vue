@@ -159,6 +159,7 @@
             axios.post('CrearJugador',this.Crearjugador).then(response =>{
               this.getListaJugadores()
               $('#modalCrear').modal('hide')
+              swal("Felicidades!","Nuevo Jugador Registrado","success");
             }).catch(function(error){
               //
             });
