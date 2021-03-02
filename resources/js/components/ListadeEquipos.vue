@@ -36,7 +36,7 @@
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Entrendador</label>
-                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.liga">
+                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.id_Entrenador">
                                 <option v-for="Entrendador in Entrendadores" :value="Entrendador.id">{{Entrendador.name +' '+ Entrendador.ApellidoP + ' ' + Entrendador.ApellidoM }}</option>
                             </select>
                           </div>
