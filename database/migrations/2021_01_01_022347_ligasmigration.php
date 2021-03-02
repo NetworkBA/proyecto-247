@@ -16,7 +16,6 @@ class Ligasmigration extends Migration
       Schema::create('Liga', function (Blueprint $table) {
         $table->increments('id');
           $table->string('Nombre');
-          $table->integer('id_Entrenador');
           $table->rememberToken();
           $table->timestamps();
       });
