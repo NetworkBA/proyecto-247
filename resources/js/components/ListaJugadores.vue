@@ -143,12 +143,26 @@
             });
           },
           getListaJugadores(){
-        var urlEstud = "ListaJugadores";
-        axios.get(urlEstud).then(response =>
-        {
-          this.Jugadores = response.data
-        });
+
+              var urlEstud = "ListaJugadores";
+
+              axios.get(urlEstud).then(response =>{
+                this.Jugadores = response.data
+                $('#sampleTable').DataTable().destroy()
+                this.tabla()
+              });
+          },
+          crear()
+          {
+
+            axios.get('CrearJugador',this.CrearJugador).then(response =>{
+              this.getListaJugadores()
+              $(#modalCrear).modal('hide')
+            }).catch(function(error){
+              //
+            });
           }
+
     }
     }
 </script>
