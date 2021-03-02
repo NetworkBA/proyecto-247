@@ -40,4 +40,4 @@ Route::get('/ListaEquipos', [App\Http\Controllers\equipos::class, 'ListaEquipos'
 
 Route::get('/Equipos', [App\Http\Controllers\HomeController::class, 'Equipos']);
 
-Route::get('/ListaLigas', [App\Http\Controllers\HomeController::class, 'ListaLigas']);
+Route::get('/ListaLigas', [App\Http\Controllers\equipos::class, 'ListaLigas']);
