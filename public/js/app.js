@@ -2186,6 +2186,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -2197,9 +2200,11 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       Equipos: [],
+      Ligas: [],
       Crearequipo: {
         name: '',
-        liga: ''
+        id_Liga: '',
+        id_Entrenador: ''
       }
     };
   },
@@ -2235,6 +2240,14 @@ __webpack_require__.r(__webpack_exports__);
         $('#sampleTable').DataTable().destroy();
 
         _this2.tabla();
+      });
+      this.getLigas();
+    },
+    getLigas: function getLigas() {
+      var _this3 = this;
+
+      axios.get('ListaLigas').then(function (response) {
+        _this3.Ligas = response.data;
       });
     }
   }
@@ -54147,7 +54160,7 @@ var render = function() {
                     _c(
                       "label",
                       { attrs: { for: "exampleFormControlSelect1" } },
-                      [_vm._v("Equipo")]
+                      [_vm._v("Liga")]
                     ),
                     _vm._v(" "),
                     _c(
@@ -54183,7 +54196,12 @@ var render = function() {
                           }
                         }
                       },
-                      [_c("option")]
+                      _vm._l(_vm.Ligas, function(liga) {
+                        return _c("option", { domProps: { value: liga.id } }, [
+                          _vm._v(_vm._s(liga.Nombre) + " >")
+                        ])
+                      }),
+                      0
                     )
                   ])
                 ])
@@ -54239,7 +54257,19 @@ var render = function() {
                 return _c("tr", { key: equipo.id }, [
                   _c("td", [_vm._v(_vm._s(equipo.Nombre))]),
                   _vm._v(" "),
-                  _c("td"),
+                  _c("td", [_vm._v(_vm._s(equipo.LigaNombre))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(
+                        equipo.name +
+                          " " +
+                          equipo.ApellidoP +
+                          " " +
+                          equipo.ApellidoM
+                      )
+                    )
+                  ]),
                   _vm._v(" "),
                   _vm._m(2, true)
                 ])
@@ -54292,6 +54322,8 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Liga")]),
         _vm._v(" "),
+        _c("th", [_vm._v("Entrendador")]),
+        _vm._v(" "),
         _c("th", [_vm._v("Acciones")])
       ])
     ])
@@ -54329,6 +54361,8 @@ var staticRenderFns = [
         _c("td", [_c("strong", [_vm._v("Equipo")])]),
         _vm._v(" "),
         _c("td", [_c("strong", [_vm._v("Liga")])]),
+        _vm._v(" "),
+        _c("td", [_c("strong", [_vm._v("Entrendador")])]),
         _vm._v(" "),
         _c("td", [_c("strong", [_vm._v("Acciones")])])
       ])
