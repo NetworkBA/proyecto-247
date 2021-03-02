@@ -48,9 +48,10 @@ class equipos extends Controller
             $entrendador->save();
 
             return true;
+            
       }catch{
 
-        return false;
+            return false;
       }
 
 
