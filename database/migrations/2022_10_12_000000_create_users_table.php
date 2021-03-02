@@ -30,7 +30,6 @@ class CreateUsersTable extends Migration
             $table->boolean('equipo')->default(0)->change();
             $table->rememberToken();
             $table->timestamps();
-
             $table->foreign('id_TipoUsuario')->references('id')->on('TipodeUsuarios')->onDelete('cascade');
             $table->foreign('id_HistorialDeportivo')->references('id')->on('HistorialDeportivo')->onDelete('cascade');
             $table->foreign('id_HistorialMedico')->references('id')->on('HistorialMedico')->onDelete('cascade');
