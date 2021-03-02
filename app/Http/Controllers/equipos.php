@@ -45,8 +45,8 @@ class equipos extends Controller
     }
     public function actualizarprofe(Request $request)
     {
-      $profe = User::findOrFail($request->id_Entrenador);
-      $profe->id_Equipo = equipo::select('id')->where('id_Entrenador','=',$profe->id)->first();
+      $profe = User::find($request->id_Entrenador);
+      $profe->id_Equipo = equipo::select('id')->where('id_Entrenador','=',$request->id_Entrenador)->first();
       $profe->save();
     }
 }
