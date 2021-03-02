@@ -140,7 +140,7 @@
 
             axios.post('Crearequipo',this.Crearequipo).then(response =>{
               this.getEquipos()
-              this.Crearequipo:{name: '',id_Liga: '',id_Entrenador: '',  }
+              this.Crearequipo = {name: '',id_Liga: '',id_Entrenador: '',  }
               $('#modalCrear').modal('hide')
               if ($('.modal-backdrop').is(':visible')) {
                     $('body').removeClass('modal-open');
