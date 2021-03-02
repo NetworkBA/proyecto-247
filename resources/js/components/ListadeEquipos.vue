@@ -19,42 +19,18 @@
                         <div class="modal-body">
                         <form>
 
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputEmail4">Correo Electronico</label>
-                              <input type="email" class="form-control" id="inputEmail4" v-model="Crearjugador.email">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputPassword4">Contraseña</label>
-                              <input type="password" class="form-control" id="inputPassword4" value="123456789">
-                            </div>
-                          </div>
+
 
                           <div class="form-group">
                             <label for="inputAddress">Nombre</label>
-                            <input type="text" class="form-control" id="name" placeholder="Miguel Jesus" v-model="Crearjugador.name">
+                            <input type="text" class="form-control" id="name" placeholder="Miguel Jesus" v-model="Crearequipo.name">
                           </div>
 
-                          <div class="form-row">
-                            <div class="form-group col-md-6">
-                              <label for="inputEmail4">Apellido Paterno</label>
-                              <input type="text" class="form-control" id="ApellidoP" v-model="Crearjugador.ApellidoP">
-                            </div>
-                            <div class="form-group col-md-6">
-                              <label for="inputPassword4">Apellido Materno</label>
-                              <input type="text" class="form-control" id="ApellidoM" v-model="Crearjugador.ApellidoM">
-                            </div>
-                          </div>
-
-                          <div class="form-group">
-                            <label for="inputAddress">Fecha de Nacimiento</label>
-                            <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento" v-model="Crearjugador.FechaNacimiento">
-                          </div>
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Equipo</label>
-                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearjugador.id_Equipo">
-                                <option v-for="equipo in Equipos" :value="equipo.id">{{equipo.Nombre}}</option>
+                            <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.liga">
+                                <option ></option>
                             </select>
                           </div>
 
@@ -62,7 +38,7 @@
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                          <button type="button" class="btn btn-primary" @click.prevent="crear">Crear Jugador</button>
+                          <button type="button" class="btn btn-primary" @click.prevent="crear">Crear Equipo</button>
                         </div>
                       </div>
                     </div>
