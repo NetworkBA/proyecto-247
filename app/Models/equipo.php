@@ -10,6 +10,6 @@ class equipo extends Model
     use HasFactory;
       protected $table = "Equipos";
 
-      protected $fillable = ['id','Nombre','id_Entrenador'];
+      protected $fillable = ['id','Nombre','id_Entrenador','id_Liga'];
 
 }
