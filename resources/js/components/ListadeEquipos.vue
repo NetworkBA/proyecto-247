@@ -23,14 +23,14 @@
 
                           <div class="form-group">
                             <label for="inputAddress">Nombre</label>
-                            <input type="text" class="form-control" id="name" placeholder="Miguel Jesus" v-model="Crearequipo.name">
+                            <input type="text" class="form-control" id="name" placeholder="" v-model="Crearequipo.name">
                           </div>
 
 
                           <div class="form-group">
                             <label for="exampleFormControlSelect1">Liga</label>
                             <select class="form-control" id="exampleFormControlSelect1" v-model="Crearequipo.liga">
-                                <option v-for="liga in Ligas" :value="liga.id">{{liga.Nombre}} ></option>
+                                <option v-for="liga in Ligas" :value="liga.id">{{liga.Nombre}}</option>
                             </select>
                           </div>
 
