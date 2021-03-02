@@ -27,6 +27,7 @@ class jugador extends Controller
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'ApellidoP' => ['required', 'string' ],
                 'ApellidoM' => [ 'string' ],
+                'FechaNacimiento' => ['required', 'date'],
 
             ]);
 
