@@ -16,7 +16,7 @@ class equipos extends Controller
     {
 
         $data =  equipo::select('Equipos.id','Equipos.Nombre','users.name','users.ApellidoP','users.ApellidoM','Liga.Nombre as LigaNombre' )
-        ->join('users','Equipos.id_Entrenador','=','users.id')->join('Liga','Equipos.id_Liga','=','Liga.id')->get();
+        ->join('users','Equipos.id_Entrenador','=','users.id')->join('Liga','Equipos.id_Liga','=','Liga.id')>where('users.id_Equipo','=','','OR','users.id_Equipo','=','1')->get();
 
         return $data;
     }
