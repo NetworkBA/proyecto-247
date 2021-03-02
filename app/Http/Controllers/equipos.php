@@ -29,6 +29,7 @@ class equipos extends Controller
 
     public function Crearequipo(Request $request)
     {
+
       $data = request()->validate([
           'name' => ['required', 'string', 'max:255'],
           'id_Liga' => ['required', 'numeric'],
@@ -45,7 +46,7 @@ class equipos extends Controller
       $entrendador->id_Equipo = $equipo->id;
       $entrendador->save();
 
-      return $equipo;
+      return true;
 
 
     }
