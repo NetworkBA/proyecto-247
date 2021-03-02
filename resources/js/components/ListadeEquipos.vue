@@ -23,7 +23,7 @@
 
                           <div class="form-group">
                             <label for="inputAddress">Nombre</label>
-                            <input type="text" class="form-control" id="name" placeholder="Miguel Jesus" v-model="Crearequipo.name">
+                            <input type="text" class="form-control" id="name" placeholder="" v-model="Crearequipo.name">
                           </div>
 
 
