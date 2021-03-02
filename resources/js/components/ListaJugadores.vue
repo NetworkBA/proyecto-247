@@ -126,6 +126,7 @@
         {
           return{
           Jugadores: [],
+          Equipos: [],
           Crearjugador:
           {
             name: '',
@@ -147,7 +148,7 @@
           getListaJugadores(){
 
               var urlEstud = "ListaJugadores";
-
+              getEquipos()
               axios.get(urlEstud).then(response =>{
                 this.Jugadores = response.data
                 $('#sampleTable').DataTable().destroy()
@@ -168,7 +169,13 @@
             }).catch(function(error){
               //
             });
-          }
+          },
+          getEquipos()
+          {
+              axios.get('ListaEquipos').then(response =>{
+                this.Equipos = response.data
+              });
+          },
 
     }
     }
