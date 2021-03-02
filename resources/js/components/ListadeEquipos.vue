@@ -78,6 +78,7 @@
                             <tr>
                                 <td><strong>Equipo</strong></td>
                                 <td><strong>Liga</strong></td>
+                                <td><strong>Entrendador</strong></td>
                                 <td><strong>Acciones</strong></td>
                             </tr>
                         </tfoot>
