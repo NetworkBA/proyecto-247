@@ -29,24 +29,29 @@ class equipos extends Controller
 
     public function Crearequipo(Request $request)
     {
+        try
+        {
+            $data = request()->validate([
+                'name' => ['required', 'string', 'max:255', 'unique:equipo'],
+                'id_Liga' => ['required', 'numeric'],
+                'id_Entrenador' => ['required', 'numeric' ],
+            ]);
 
-      $data = request()->validate([
-          'name' => ['required', 'string', 'max:255', 'unique:equipo'],
-          'id_Liga' => ['required', 'numeric'],
-          'id_Entrenador' => ['required', 'numeric' ],
-      ]);
+            $equipo = new equipo();
+            $equipo->Nombre = $data['name'];
+            $equipo->id_Entrenador = $data['id_Entrenador'];
+            $equipo->id_Liga = $data['id_Liga'];
+            $equipo->save();
 
-      $equipo = new equipo();
-      $equipo->Nombre = $data['name'];
-      $equipo->id_Entrenador = $data['id_Entrenador'];
-      $equipo->id_Liga = $data['id_Liga'];
-      $equipo->save();
+            $entrendador = User::find($data['id_Entrenador']);
+            $entrendador->id_Equipo = $equipo->id;
+            $entrendador->save();
 
-      $entrendador = User::find($data['id_Entrenador']);
-      $entrendador->id_Equipo = $equipo->id;
-      $entrendador->save();
+            return true;
+      }catch{
 
-      return true;
+        return false;
+      }
 
 
     }
