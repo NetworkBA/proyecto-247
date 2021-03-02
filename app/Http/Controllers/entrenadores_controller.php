@@ -10,7 +10,7 @@ class entrenadores_controller extends Controller
 {
     public function ListaEntrenadores()
     {
-      return User::select('users.id','users.name','users.ApellidoP','users.ApellidoM')where('users.id_TipoUsuario','=','2','AND','users.id_Equipo','=','')->get();
+      return User::select('users.id','users.name','users.ApellidoP','users.ApellidoM')->where('users.id_TipoUsuario','=','2','AND','users.id_Equipo','=','')->get();
 
     }
 }
