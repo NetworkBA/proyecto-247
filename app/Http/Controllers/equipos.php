@@ -30,8 +30,8 @@ class equipos extends Controller
     {
       $data = request()->validate([
           'name' => ['required', 'string', 'max:255'],
-          'id_Liga' => ['required', 'number'],
-          'id_Entrenador' => ['required', 'number' ],
+          'id_Liga' => ['required', 'numeric'],
+          'id_Entrenador' => ['required', 'numeric' ],
       ]);
 
       return User::create([
