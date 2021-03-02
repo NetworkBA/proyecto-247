@@ -157,7 +157,7 @@
 
             axios.get('CrearJugador',this.CrearJugador).then(response =>{
               this.getListaJugadores()
-              $(#modalCrear).modal('hide')
+              $('#modalCrear').modal('hide')
             }).catch(function(error){
               //
             });
