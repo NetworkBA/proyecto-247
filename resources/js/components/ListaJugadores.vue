@@ -194,15 +194,7 @@
           },
           abrirCrear()
           {
-              this.titulo='Crear Jugador'
-              this.name= '',
-              this.ApellidoP= '',
-              this.ApellidoM= ' ',
-              this.email= '',
-              this.id_Equipo= '',
-              FechaNacimiento= '',
-              this.btnCrear= true,
-              this.btnEditar= false,
+              this.limpiar()
             $('#modalCrear').modal('show')
           },
           abrirDetalles(datos)
@@ -223,6 +215,22 @@
 
             $('#modalCrear').modal('show')
           },
+          limpiar()
+          {
+              this.btnCrear= false,
+              this.btnEditar= false,
+              this.titulo=''
+              this.Crearjugador = {
+              name: '',
+              ApellidoP: '',
+              ApellidoM: '',
+              email: '',
+              FechaNacimiento: '',
+              id_Equipo: '',
+              }
+              this.id_jugador = datos.id,
+              this.id_Equipo= datos.id_Equipo,
+          }
 
     }
     }
