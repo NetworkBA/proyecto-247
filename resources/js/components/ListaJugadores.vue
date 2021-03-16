@@ -94,7 +94,7 @@
                                   <td>{{jugador.Nombre}}</td>
                                   <td>{{jugador.LigaNombre}}</td>
                                   <td>
-                                    <button class="btn btn-info btn-sm" type="button" @click="abrirDetalles">Detalles</button>
+                                    <button class="btn btn-info btn-sm" type="button" @click="abrirDetalles(jugador)">Detalles</button>
                                     <button class="btn btn-primary btn-sm" type="button">Editar</button>
                                     <button class="btn btn-danger btn-sm" type="button">Eliminar</button>
                                   </td>
