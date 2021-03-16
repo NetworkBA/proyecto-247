@@ -215,8 +215,8 @@
               ApellidoP: datos.ApellidoP,
               ApellidoM: datos.ApellidoM,
               email: datos.email,
-              FechaNacimiento= datos.FechaNacimiento,
-              id_Equipo = datos.id_Equipo,
+              FechaNacimiento: datos.FechaNacimiento,
+              id_Equipo: datos.id_Equipo,
               }
               this.id_jugador = datos.id,
               this.id_Equipo= datos.id_Equipo,
