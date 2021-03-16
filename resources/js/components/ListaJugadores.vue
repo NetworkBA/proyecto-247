@@ -211,9 +211,9 @@
               this.btnEditar= true,
               this.titulo='Ver Jugador'
               this.Crearjugador = {
-              name= datos.name
-              ApellidoP= datos.ApellidoP
-              ApellidoM= datos.ApellidoM
+              name= datos.name,
+              ApellidoP= datos.ApellidoP,
+              ApellidoM= datos.ApellidoM,
               email= datos.email
               }
               this.id_jugador = datos.id,
