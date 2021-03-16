@@ -16,7 +16,7 @@ class jugador extends Controller
     public  function ListaJugadores()
     {
         $Jugadores = User::select('users.id' ,'users.id_Equipo','users.name','users.ApellidoP','users.ApellidoM')
-        ->where('users.id_TipoUsuario','5')->get();
+        ->where('users.id_TipoUsuario','5')->join('users','Equipos.id','=','users.id_Equipo')->get();
         return $Jugadores;
     }
 
