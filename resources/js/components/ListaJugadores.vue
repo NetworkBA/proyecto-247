@@ -208,11 +208,13 @@
           {
               this.btnCrear= false,
               this.btnEditar= true,
-              this.titulo='Editar Jugador'
-              this.name= datos.name,
-              this.ApellidoP= datos.ApellidoP,
-              this.ApellidoM= datos.ApellidoM,
-              this.email= datos.email,
+              this.titulo='Ver Jugador'
+              this.Crearjugador = {
+              name= datos.name
+              ApellidoP= datos.ApellidoP
+              ApellidoM= datos.ApellidoM
+              email= datos.email
+              }
               this.id_Equipo= datos.id_Equipo,
               FechaNacimiento= datos.FechaNacimiento,
             $('#modalCrear').modal('show')
