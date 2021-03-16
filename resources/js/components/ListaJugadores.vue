@@ -137,6 +137,7 @@
           Jugadores: [],
           Equipos: [],
           titulo: '',
+          id_jugador: '',
           btnCrear: false,
           btnEditar: false,
           Crearjugador:
@@ -215,6 +216,7 @@
               ApellidoM= datos.ApellidoM
               email= datos.email
               }
+              this.id_jugador = datos.id,
               this.id_Equipo= datos.id_Equipo,
               FechaNacimiento= datos.FechaNacimiento,
             $('#modalCrear').modal('show')
