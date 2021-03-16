@@ -4,14 +4,14 @@
 
             <div class="card-header">
               Lista de Jugadores
-                <button class="btn btn-success btn-sm" type="button" data-toggle='modal' data-target='#modalCrear'>Nuevo Jugador</button>
+                <button class="btn btn-success btn-sm" type="button" data-toggle='modal'  @click="abrirCrear">Nuevo Jugador</button>
 
                 <!-- Modal -->
                   <div class="modal" id="modalCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Crear Jugador</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -62,7 +62,9 @@
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                          <button type="button" class="btn btn-primary" @click.prevent="crear">Crear Jugador</button>
+                          <button type="button" class="btn btn-primary" @click.prevent="crear" v-if="btnCrear">Crear Jugador</button>
+                          <button type="button" class="btn btn-primary" @click.prevent="guardar" v-if="btnEditar">Guardar Jugador</button>
+
                         </div>
                       </div>
                     </div>
@@ -92,7 +94,7 @@
                                   <td>{{jugador.Nombre}}</td>
                                   <td>{{jugador.LigaNombre}}</td>
                                   <td>
-                                    <button class="btn btn-info btn-sm" type="button">Detalles</button>
+                                    <button class="btn btn-info btn-sm" type="button" @click="abrirDetalles">Detalles</button>
                                     <button class="btn btn-primary btn-sm" type="button">Editar</button>
                                     <button class="btn btn-danger btn-sm" type="button">Eliminar</button>
                                   </td>
@@ -134,6 +136,9 @@
           return{
           Jugadores: [],
           Equipos: [],
+          titulo: '',
+          btnCrear: false,
+          btnEditar: false,
           Crearjugador:
           {
             name: '',
@@ -185,6 +190,30 @@
                 $('#sampleTable').DataTable().destroy()
                 this.tabla()
               });
+          },
+          abrirCrear()
+          {
+              this.titulo='Crear Jugador'
+              this.name= '',
+              this.ApellidoP= '',
+              this.ApellidoM= ' ',
+              this.email= '',
+              this.id_Equipo= '',
+              FechaNacimiento= '',
+              this.btnCrear= true,
+              this.btnEditar= false,
+            $('#modalCrear').modal('show')
+          },
+          abrirDetalles(datos)
+          {
+              this.titulo='Editar Jugador'
+              this.name= datos.name,
+              this.ApellidoP= datos.ApellidoP,
+              this.ApellidoM= datos.ApellidoM,
+              this.email= datos.email,
+              this.id_Equipo= datos.id_Equipo,
+              FechaNacimiento= datos.FechaNacimiento,
+            $('#modalCrear').modal('show')
           },
 
     }
