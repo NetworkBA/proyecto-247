@@ -228,8 +228,8 @@
               FechaNacimiento: '',
               id_Equipo: '',
               }
-              this.id_jugador = datos.id,
-              this.id_Equipo= datos.id_Equipo
+              this.id_jugador = '',
+              this.id_Equipo= ''
           },
 
     }
