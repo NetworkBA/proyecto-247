@@ -206,6 +206,8 @@
           },
           abrirDetalles(datos)
           {
+              this.btnCrear= false,
+              this.btnEditar= true,
               this.titulo='Editar Jugador'
               this.name= datos.name,
               this.ApellidoP= datos.ApellidoP,
