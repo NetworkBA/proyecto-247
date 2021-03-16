@@ -89,8 +89,8 @@
                         <tbody>
                               <tr v-for ="jugador in Jugadores" :key="jugador.id" >
                                   <td>{{jugador.name + ' ' + jugador.ApellidoP + ' '+ jugador.ApellidoM +  ''}}</td>
-                                  <td></td>
-                                  <td></td>
+                                  <td v-for = "Equipos in equipo" :key="equipo.id">{{equipo.Nombre}}</td>
+                                  <td v-for = "Equipos in equipo" :key="equipo.id">{{equipo.LigaNombre}}</td>
                                   <td>
                                     <button class="btn btn-info btn-sm" type="button">Detalles</button>
                                     <button class="btn btn-primary btn-sm" type="button">Editar</button>
