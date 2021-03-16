@@ -45,6 +45,7 @@ class jugador extends Controller
                 'id_TipoUsuario' => 5,
                 'id_HistorialDeportivo' => $historialdeportivo['id'],
                 'id_HistorialMedico' => $historialmedico['id'],
+                'id_Equipo' => $data['id_Equipo'],
                 'imagedeusuario' => 'assets/img/avatars/avatar5.jpeg',
             ]);
          }
