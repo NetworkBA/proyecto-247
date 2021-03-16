@@ -230,7 +230,7 @@
               }
               this.id_jugador = datos.id,
               this.id_Equipo= datos.id_Equipo
-          }
+          },
 
     }
     }
