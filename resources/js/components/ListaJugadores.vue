@@ -70,6 +70,69 @@
                     </div>
                   </div>
                   <!-- Modal -->
+
+                  <!-- Modal -->
+                    <div class="modal" id="modalBorrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">{{titulo}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                          <form>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Correo Electronico</label>
+                                <input type="email" class="form-control" id="inputEmail4" v-model="Crearjugador.email" readonly>
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword4" value="123456789" readonly>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="inputAddress">Nombre</label>
+                              <input type="text" class="form-control" id="name" placeholder="Miguel Jesus" v-model="Crearjugador.name" readonly>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Apellido Paterno</label>
+                                <input type="text" class="form-control" id="ApellidoP" v-model="Crearjugador.ApellidoP" readonly>
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Apellido Materno</label>
+                                <input type="text" class="form-control" id="ApellidoM" v-model="Crearjugador.ApellidoM" readonly>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="inputAddress">Fecha de Nacimiento</label>
+                              <input class="form-control" type="date" value="2011-08-19" id="FechaNacimiento" v-model="Crearjugador.FechaNacimiento" readonly>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">Equipo</label>
+                              <select class="form-control" id="exampleFormControlSelect1" v-model="Crearjugador.id_Equipo" readonly>
+                                  <option v-for="equipo in Equipos" :value="equipo.id">{{equipo.Nombre}}</option>
+                              </select>
+                            </div>
+
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" @click.prevent="crear" v-if="btnBorrar">Borrar Jugador</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal -->
             </div>
 
             <div class="card-body">
@@ -94,9 +157,9 @@
                                   <td>{{jugador.Nombre}}</td>
                                   <td>{{jugador.LigaNombre}}</td>
                                   <td>
-                                    <button class="btn btn-info btn-sm" type="button" @click="abrirDetalles(jugador)">Detalles</button>
-                                    <button class="btn btn-primary btn-sm" type="button">Editar</button>
-                                    <button class="btn btn-danger btn-sm" type="button">Eliminar</button>
+                                    <button class="btn btn-info btn-sm" type="button" >Detalles</button>
+                                    <button class="btn btn-primary btn-sm" type="button" @click="abrirDetalles(jugador)">Editar</button>
+                                    <button class="btn btn-danger btn-sm" type="button" @click="abrirEliminar(jugador)">Eliminar</button>
                                   </td>
                               </tr>
                         </tbody>
@@ -140,6 +203,7 @@
           id_jugador: '',
           btnCrear: false,
           btnEditar: false,
+          btnBorrar: false,
           Crearjugador:
           {
             name: '',
@@ -203,7 +267,7 @@
           {
               this.btnCrear= false,
               this.btnEditar= true,
-              this.titulo='Ver Jugador'
+              this.titulo='Editar Jugador'
               this.Crearjugador = {
               name: datos.name,
               ApellidoP: datos.ApellidoP,
@@ -217,10 +281,28 @@
 
             $('#modalCrear').modal('show')
           },
+          abrirEliminar(datos)
+          {
+              this.btnBorrar= true,
+              this.titulo='Borrar Jugador'
+              this.Crearjugador = {
+              name: datos.name,
+              ApellidoP: datos.ApellidoP,
+              ApellidoM: datos.ApellidoM,
+              email: datos.email,
+              FechaNacimiento: datos.FechaNacimiento,
+              id_Equipo: datos.id_Equipo,
+              }
+              this.id_jugador = datos.id,
+              this.id_Equipo= datos.id_Equipo,
+
+            $('#modalBorrar').modal('show')
+          },
           limpiar()
           {
               this.btnCrear= false,
               this.btnEditar= false,
+              this.btnBorrar = false,
               this.titulo=''
               this.Crearjugador = {
               name: '',
