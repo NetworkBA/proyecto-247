@@ -195,6 +195,8 @@
           abrirCrear()
           {
               this.limpiar()
+              this.titulo='Crear Jugador'
+
             $('#modalCrear').modal('show')
           },
           abrirDetalles(datos)
