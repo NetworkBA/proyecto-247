@@ -26,7 +26,7 @@
                             </div>
                             <div class="form-group col-md-6">
                               <label for="inputPassword4">Contraseña</label>
-                              <input type="password" class="form-control" id="inputPassword4" value="123456789">
+                              <input type="password" class="form-control" id="inputPassword4" value="123456789" readonly>
                             </div>
                           </div>
 
